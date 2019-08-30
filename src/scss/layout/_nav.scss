@@ -1,0 +1,104 @@
+.nav {
+    padding: 2.6rem;
+    width: 100vw;
+    margin-left: 0;
+    background: transparent;
+    text-align: right;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+
+
+}
+
+.list {
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s ease;
+
+    &--open {
+        transform: scale(1);
+        opacity: 1;
+        padding: 2rem 0;
+        
+    }
+}
+
+.list_item {
+        list-style-type: none;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+        background-color: $color-primary;
+
+        &:not(:last-child){
+            border-bottom: .5px solid $color-grey-light;
+        }
+        
+
+        a:link,
+        a:visited {
+            
+            font-weight: 700;
+            padding: 0 1rem;
+            cursor: pointer;
+            
+        }
+    }
+    
+
+   
+// HAMBURGER
+
+.hamburger_menu {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid $color-primary;
+    border-radius: 4px;
+    position: relative;
+    background: transparent;
+    transition: .3s transform linear;
+    cursor: pointer;
+    opacity: .8;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid $color-primary;
+        border-radius: 4px;
+    }
+
+    &::after {
+        transform: translateY(25px);
+        transition: .3s transform linear;
+    }
+
+    &::before {
+        transform: translateY(10px);
+    }
+        
+}
+
+.hamburger_menu--active {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+
+    &::after {
+        transform: rotate(-90deg) translateX(-10px);
+    }
+}
+
+
+
+
+        
+
+
+ 
+
