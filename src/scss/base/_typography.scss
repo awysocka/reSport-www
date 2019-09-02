@@ -3,10 +3,32 @@
     font-size: 3rem;
     color: $color-grey-dark;
     text-transform: uppercase;
+
+    &--white {
+        color: $color-white;
+    }
 }
 
 .heading_fourth {
     margin-bottom: 1rem;
     color: $color-grey-dark;
     font-size: 2rem;
+}
+
+.heading_fifth {
+    margin-bottom: 1rem;
+    color: $color-white;
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    color: $color-grey-dark;
+    line-height: 1.4;
+
+    &--white {
+        color: $color-white;
+        padding-bottom: 0;
+    }
 }
