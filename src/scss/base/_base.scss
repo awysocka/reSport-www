@@ -26,9 +26,8 @@ img {
 a {
     &:link,
     &:visited {
-        
-        text-decoration: none;
         color: $color-grey-light;
+        text-decoration: none;
         padding: 0 1rem;
         cursor: pointer;
         

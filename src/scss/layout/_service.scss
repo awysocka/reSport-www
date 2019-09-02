@@ -1,11 +1,7 @@
 .service {
     margin-top: 4rem;
-    h2 {
-        text-align: center;
-        font-size: 3rem;
-        color: $color-grey-dark;
-    }
-    h4:not(:last-child) {
+  
+    .heading_fourth:not(:last-child) {
         margin-bottom: 1rem;
         color: $color-grey-dark;
         font-size: 2rem;
@@ -14,7 +10,7 @@
 
     .service_box {
         padding: 3rem;
-        margin: 2rem;
+        margin: 4rem 2rem;
         background-color: $color-grey-light;
         min-height: 25rem;
         border-radius: 4px;
