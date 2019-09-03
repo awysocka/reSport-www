@@ -1,0 +1,20 @@
+.prices {
+    margin-top: 4rem;
+
+    &__box {
+        text-align: center;
+        padding: 3rem;
+        margin: 4rem 2rem;
+        background-color: $color-grey-light;
+        min-height: 10rem;
+        border-radius: 4px;
+    }
+
+    .price {
+        display: block;
+        color: $color-grey-dark;
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+}

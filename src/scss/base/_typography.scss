@@ -13,6 +13,11 @@
     margin-bottom: 1rem;
     color: $color-grey-dark;
     font-size: 2rem;
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
 }
 
 .heading_fifth {
@@ -31,4 +36,12 @@
         color: $color-white;
         padding-bottom: 0;
     }
+
+    &--orange {
+        color: $color-secondary;
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    
 }
