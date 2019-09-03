@@ -30,7 +30,7 @@
     font-size: 1.6rem;
     padding-bottom: 2rem;
     color: $color-grey-dark;
-    line-height: 1.4;
+    line-height: 1.6;
 
     &--white {
         color: $color-white;
@@ -41,6 +41,16 @@
         color: $color-secondary;
         padding: .5rem 0;
         text-align: center;
+    }
+
+    &--contact {
+        display: inline-block;
+    }
+
+    &--copyright {
+        color: $color-white;
+        padding: 2rem 0;
+        font-size: 1.2;
     }
 
     

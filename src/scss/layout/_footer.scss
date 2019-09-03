@@ -1,0 +1,77 @@
+.footer {
+    margin-top: 4rem;
+    background-color: $color-grey-dark;
+    padding: 4rem 2rem 0;
+}
+
+// contact info
+
+.contact {
+
+    &__info {
+        padding: 4rem 0rem;
+    }
+    
+    &__item {
+        list-style-type: none;
+        display: flex;
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+
+        a:link,
+        a:visited {
+            margin: 0;
+            padding: 0;
+            border-bottom: .5px solid $color-white;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    &__icon {
+        color: $color-primary;
+        min-width: 2rem;
+        margin-right: 1rem;
+    }
+   
+}
+
+// contact map
+
+.contact {
+
+    &__map {
+        .map__box {
+            text-align: center;
+            position: relative;
+            padding-bottom: 75%; // Tutaj regulujemy wysokość
+            height: 0;
+            overflow: hidden;
+
+            .map {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+    
+}
+
+.copyright {
+    margin-top: 4rem;
+    border-top: 1px solid $color-white;
+    text-align: center;
+
+    a,
+    a:link,
+    a:visited {
+        margin: 0;
+        padding: 0;
+        border-bottom: .5px solid $color-white;
+    }
+}

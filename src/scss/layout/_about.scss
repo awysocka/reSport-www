@@ -4,6 +4,15 @@
     &__box {
         margin: 4rem 2rem;
         text-align: center;
+
+        a,
+        a:link,
+        a:visited {
+            color: $color-grey-dark;
+            border-bottom: 0.5px solid $color-grey-dark;
+            margin: 0;
+            padding: 0;
+        }
     }
 
     &__img {
