@@ -4,15 +4,6 @@
     &__box {
         margin: 4rem 2rem;
         text-align: center;
-
-        a,
-        a:link,
-        a:visited {
-            color: $color-grey-dark;
-            border-bottom: 0.5px solid $color-grey-dark;
-            margin: 0;
-            padding: 0;
-        }
     }
 
     &__img {
@@ -27,8 +18,7 @@
             background-position: center;
             display: block;
             border-radius: 50%;
-            margin: 2rem auto;
-            
+            margin: 2rem auto;    
         }
 
         &--item2 {
@@ -43,23 +33,9 @@
         }
     }
 
-    .link-more {
-        color: $color-grey-dark;
-        font-size: 1.6rem;
+    .link--more {
+        font-size: $size-m;
         padding: .2rem;
-        border-bottom: 1px solid $color-grey-dark;
-
-        &:hover {
-            color: $color-secondary;
-            border-bottom: 1px solid $color-secondary;
-            cursor: pointer;
-        }
     }
-
-    // .paragraph {
-    //     font-size: 1.4rem;
-    //     padding-bottom: 2rem;
-    //     color: $color-grey-dark;
-    // }
 }
 

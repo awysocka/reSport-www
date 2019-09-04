@@ -1,0 +1,40 @@
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color-grey-dark, .6) ;
+    z-index: $popup;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.popup--active {
+    display: flex;
+}
+
+.popup__box {
+    width: 90%;
+    height: 90%;
+    background-color: $color-white;
+    padding: 4rem 3rem;
+    text-align: center;
+    border-radius: 4px;
+    overflow: auto;
+    position: relative;
+}
+
+.popup__close{
+    position: fixed;
+    top: 3rem;
+    right: 4rem;
+    font-size: $size-xs*3;
+    color: $color-grey-dark;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $color-secondary;
+    }
+}

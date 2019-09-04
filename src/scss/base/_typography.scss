@@ -1,6 +1,6 @@
 .heading_secondary {
     text-align: center;
-    font-size: 3rem;
+    font-size: $size-xs*3;
     color: $color-grey-dark;
     text-transform: uppercase;
 
@@ -9,49 +9,61 @@
     }
 }
 
+.heading-tertiary {
+    font-size: $size-xs + $size-m;
+    color: $color-grey-light;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
 .heading_fourth {
     margin-bottom: 1rem;
     color: $color-grey-dark;
-    font-size: 2rem;
+    font-size: $size-xs*2;
 
     &--uppercase {
         text-transform: uppercase;
     }
-
 }
 
 .heading_fifth {
     margin-bottom: 1rem;
     color: $color-white;
-    font-size: 1.8rem;
+    font-size: $size-l;
 }
 
 .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 2rem;
+    font-size: $size-m;
+    margin-bottom: 2rem;
     color: $color-grey-dark;
     line-height: 1.6;
+}
 
-    &--white {
-        color: $color-white;
-        padding-bottom: 0;
-    }
+.paragraph--white {
+    color: $color-grey-light;
+    padding-bottom: 0;
+}
 
-    &--orange {
-        color: $color-secondary;
-        padding: .5rem 0;
-        text-align: center;
-    }
+.paragraph--orange {
+    color: $color-secondary;
+    padding: .5rem 0;
+    text-align: center;
+}
 
-    &--contact {
-        display: inline-block;
-    }
+.paragraph--contact {
+    display: inline-block;
+}
 
-    &--copyright {
-        color: $color-white;
-        padding: 2rem 0;
-        font-size: 1.2;
-    }
+.paragraph--copyright {
+    color: $color-white;
+    padding: 2rem 0;
+    font-size: $size-s;
+}
 
-    
+.paragraph--register {
+    font-size: $size-l;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 4rem;
 }

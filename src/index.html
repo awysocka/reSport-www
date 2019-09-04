@@ -11,18 +11,22 @@
 </head>
 <body>
     <div class="wrapper">
-            <nav class="nav">
-                <button class="hamburger_menu" id="hamburger_menu" aria-label="menu"></button>
-                <ul class="list" id="list">
-                    <li class="list_item"><a href="#" class="list_link">Oferta</a></li>
-                    <li class="list_item"><a href="#" class="list_link">O nas</a></li>
-                    <li class="list_item"><a href="#" class="list_link">Cennik</a></li>
-                    <li class="list_item"><a href="#" class="list_link">Kontakt</a></li>
+            <button class="hamburger" id="hamburger" aria-label="menu">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav__list" id="nav__list">
+                    <li class="nav__item"><a href="#" class="list_link link--white">Oferta</a></li>
+                    <li class="nav__item"><a href="#" class="list_link link--white">O nas</a></li>
+                    <li class="nav__item"><a href="#" class="list_link link--white">Cennik</a></li>
+                    <li class="nav__item"><a href="#" class="list_link link--white">Kontakt</a></li>
                 </ul>
             </nav>
         <header class="header">
             <img src="img/logo.png" alt="logo_resport">
-            <button class="button-cta"><a href="#">Umów wizytę</a></button>
+            <button class="button-cta"><a href="#" class="link--white">Umów wizytę</a></button>
         </header>
         <section class="service">
             <h2 class="heading_secondary">Oferta</h2>
@@ -59,8 +63,8 @@
             </div>
         </section>
         <div class="divider">
-            <h3>Szybka i skuteczna pomoc w powrocie do pełnej sprawności</h3>
-            <a href="#" class="link-cta">Umów się na wizytę już dziś</a>
+            <h3 class="heading-tertiary">Szybka i skuteczna pomoc w powrocie do pełnej sprawności</h3>
+            <a href="#" class="link-cta link--white">Umów się na wizytę już dziś</a>
         </div>
         <section class="about">
             <h2 class="heading_secondary">O nas</h2>
@@ -71,8 +75,8 @@
                     specjalizuje się w fizjoterapi uroginekologicznej,
                     kobiet w ciąży, ortopedycznej
                     oraz neurologicznej</p>
-                <p class="paragraph">kontakt: <a href="tel:+48724003582">+48 724 003 582</a></p>
-                <a class="link-more" href="#">więcej</a>
+                <p class="paragraph">kontakt: <a href="tel:+48724003582" class="link--orange"> 724 003 582</a></p>
+                <a class="link--more link--orange" id="link-more-anna" href="#">więcej</a>
             </div>
             <div class="about__box">
                 <div class="about__img about__img--item2"></div> 
@@ -82,8 +86,8 @@
                     sportowej, pourazowej, pooperacyjnej, 
                     geriatrycznej i korekcji wad postawy
                     </p>
-                <p class="paragraph">kontakt: <a href="tel:+48601933337">+48 601 933 337</a></p>
-                <a class="link-more" href="#">więcej</a>
+                <p class="paragraph">kontakt: <a href="tel:+48601933337" class="link--orange"> 601 933 337</a></p>
+                <a class="link--more link--orange" id="link-more-radoslaw" href="#">więcej</a>
             </div>
         </section>
         <section class="benefits">
@@ -166,10 +170,10 @@
                     </li>
                     <li class="contact__item">
                         <span>
-                            <i class="fas contact__icon fa-clock"></i>
+                            <i class="contact__icon fas  fa-clock"></i>
                         </span>
                         <p class="paragraph paragraph--white">
-                            pon - pt  8.00-18.00 <br>sob    9.00-13.00
+                            pon - pt:  8.00-18.00 <br>sob:    9.00-13.00
                         </p>
                     </li>
                     <li class="contact__item">
@@ -177,8 +181,8 @@
                             <i class="fas contact__icon fa-phone-alt"></i>
                         </span>
                         <p class="paragraph paragraph--white">
-                            Radosław Rojek <a href="tel:+48601933337">+48 601 933 337</a><br>
-                            Anna Rojek <a href="tel:+48724003582">+48 724 003 582</a><br>
+                            Radosław Rojek: <a href="tel:+48601933337" >601 933 337</a><br>
+                            Anna Rojek: <a href="tel:+48724003582" >724 003 582</a><br>
                             Rejestracja wyłącznie telefoniczna
                         </p>
                         
@@ -221,12 +225,53 @@
             </section>
             <div class="copyright">
                 <p class="paragraph paragraph--copyright">Copyright &copy; 2019 Radosław Rojek ReSport<br>
-                 Projekt i wykonanie <a href="https://annawysocka.pl/" target="blank">Anna Wysocka</a> </p>
+                 Projekt i wykonanie <a href="https://annawysocka.pl/" class="link--white" target="blank">Anna Wysocka</a> </p>
             </div>
         </footer>
     </div>
 
-    
+    <!-- popup Anna -->
+        <div class="popup" id="popup-anna">
+            <div class="popup__box">
+                <a href="#" class="popup__close" >&times;</a>
+                <h4 class="heading_fourth">Anna Rojek</h4>
+                <div class="about__img about__img--item1"></div> 
+                <p class="paragraph">Jestem absolwentką Akademii Wychowania Fizycznego w Krakowie,
+                        gdzie ukończyłam kolejno studia licencjackie, magisterskie, a w 2017 uzyskałam tytuł doktora nauk o
+                        kulturze fizycznej. </p>
+                <p class="paragraph">W zawodzie fizjoterapeuty pracuję od 2011 roku. Do
+                        chwili obecnej ukończyłam również Szkołę Masażu Leczniczego w Krakowie oraz wiele szkoleń z zakresu
+                        fizjoterapii ortopedycznej, neurologicznej i uroginekologicznej.
+                        Znajduję się również na liście
+                        <a href="https://ptug.pl/wykaz-certyfikowanych-lekarzy-i-fizjoterapeutow/?specjalista=fizjoterapeuta"
+                        class="link--orange" target="_blank" rel="noopener noreferrer">Certyfikowanych terapeutów Uroginekologicznych Polskiego Towarzystwa
+                        Uroginekologicznego.</a> Od 2013 roku jestem tłumaczem szkoleń dla
+                        fizjoterapeutów w firmie Reha Plus w Krakowie.</p>
+                    <p class="paragraph">
+                        Poza pracą fizjoterapeuty od 2016 roku jestem certyfikowanym nauczycielem Jogi i prowadzę zajęcia w
+                        swojej własnej<a href="http://yogatarnow.pl/" class="link--orange" target="_blank" rel="noopener noreferrer"> szkole.</a>
+                        Ponad to elementy jogi wykorzystuję w terapii swoich pacjentek.
+                    </p>
+                <p class="paragraph paragraph--register">Umów wizytę: <a href="tel:+48724003582" class="link--orange"> 724 003 582</a></p>
+                <p class="paragraph"><a href="http://annarojek.pl/"  target="blank" class="link--orange">annarojek.pl</a></p>
+            </div>
+        </div>
+    <!-- popup Radosław -->
+        <div class="popup" id="popup-radoslaw">
+            <div class="popup__box">
+                <a href="#" class="popup__close">&times;</a>
+                <h4 class="heading_fourth">Radosław Rojek</h4>
+                <div class="about__img about__img--item2"></div>
+                <p class="paragraph">W 2013 roku ukończyłem studia magisterskie z fizjoterapii na wydziale medycznym Uniwersytetu Rzeszowskiego. W 2019 roku uzyskałem tytuł doktora nauk o kulturze fizycznej na Akademii Wychowania Fizycznego w Krakowie. Ukończyłem Również studia licencjackie z wychowania fizycznego ze specjalizacją z gimnastyki korekcyjnej na Państwowej Wyższej Szkole Zawodowej w Tarnowie w 2011 roku.
+                    </p>
+                <p class="paragraph">W zawodzie fizjoterpeuty pracuje od 2011 roku. Do chwili obecnej ukończyłem wiele szkoleń z zakresu rehabilitacji ortopedyczne oraz sportowej. 
+                        Pracowałem również jako fizjoterapeuta drużyny piłkarskiej ZKS Unia Tarnów. 
+                        W swojej pracy wykorzystuje głównie terapię manualną, medyczny trening funkcjonalny, elementy jogi oraz gimnastyki.  
+                        </p>
+                <p class="paragraph">Poza pracą fizjoterpeuty od 2016 roku jestem certyfikowany nauczycielem jogi i prowadzę zajęcia w swojej własnej <a href="http://yogatarnow.pl/" class="link--orange" target="_blank" rel="noopener noreferrer">szkole.</a> Jestem również instruktorem pływania oraz gimnastyki sportowej.</p>
+                <p class="paragraph paragraph--register">Umów wizytę: <a href="tel:+48601933337" class="link--orange"> 601 933 337</a></p>
+            </div>
+        </div>
 
 
 <script src="js/script.js"></script>

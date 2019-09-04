@@ -4,7 +4,7 @@
     .heading_fourth:not(:last-child) {
         margin-bottom: 1rem;
         color: $color-grey-dark;
-        font-size: 2rem;
+        font-size: $size-xs*2;
         
     }
 
@@ -17,7 +17,7 @@
     }
 
     .service_items {
-        font-size: 1.6rem;
+        font-size: $size-m;
         line-height: 1.6;
         color: $color-grey-dark;
     }

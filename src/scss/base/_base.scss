@@ -16,6 +16,10 @@ body {
     font-family: 'Lato', sans-serif;   
 }
 
+.wrapper {
+    min-width: 37rem;
+}
+
 img {
     display: block;
     width: 100%;
@@ -26,10 +30,31 @@ img {
 a {
     &:link,
     &:visited {
-        color: $color-grey-light;
         text-decoration: none;
-        padding: 0 1rem;
+        padding: 0;
         cursor: pointer;
-        
+        margin: 0; 
+    }
+}
+
+.link--white {
+    color: $color-grey-light;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $color-white;
+        cursor: pointer;
+    }
+}
+
+.link--orange {
+    color: $color-grey-dark;
+    border-bottom: .5px solid $color-grey-dark;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $color-secondary;
+        border-bottom: .5px solid $color-secondary;
+        cursor: pointer;
     }
 }

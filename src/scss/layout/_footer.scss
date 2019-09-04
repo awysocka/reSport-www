@@ -15,14 +15,18 @@
     &__item {
         list-style-type: none;
         display: flex;
-        font-size: 1.6rem;
-        padding-bottom: 2rem;
+        font-size: $size-m;
 
         a:link,
         a:visited {
             margin: 0;
             padding: 0;
-            border-bottom: .5px solid $color-white;
+            border-bottom: .5px solid $color-grey-light;
+            color: $color-grey-light;
+        }
+
+        a:hover {
+            color: $color-white;
         }
 
         .uppercase {
@@ -34,7 +38,11 @@
         color: $color-primary;
         min-width: 2rem;
         margin-right: 1rem;
+        text-align: center;
+        vertical-align: middle;
     }
+
+
    
 }
 

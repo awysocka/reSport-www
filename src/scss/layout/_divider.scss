@@ -4,16 +4,8 @@
     padding: 6rem 2rem;
     text-align: center;
 
-    h3 {
-        font-size: 2.6rem;
-        color: $color-grey-light;
-        font-weight: 300;
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-
     .link-cta {
-        font-size: 2rem;
+        font-size: $size-xs*2;
         font-weight: 300;
         padding: .5rem;
         border-bottom: 1px solid $color-grey-light;
