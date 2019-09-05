@@ -7,6 +7,7 @@
     top: 0;
     right: 0;
     transform: translateX(25rem);
+    z-index: $nav;
 }
 
 .nav, .hamburger {
@@ -39,6 +40,7 @@
     margin: 2rem;
     position: fixed;
     right: 0;
+    
 
 }
 
@@ -47,7 +49,7 @@
 }
 
 .hamburger__box {
-    width: 35px;
+    width: 30px;
     height: 20px;
     display: inline-block;
     position: relative;
