@@ -41,7 +41,7 @@
 }
 
 .paragraph--white {
-    color: $color-grey-light;
+    color: $color-white;
     padding-bottom: 0;
 }
 
@@ -52,7 +52,8 @@
 }
 
 .paragraph--contact {
-    display: inline-block;
+    color: $color-grey-light;
+    padding-bottom: 0;
 }
 
 .paragraph--copyright {
