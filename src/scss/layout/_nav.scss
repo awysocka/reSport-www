@@ -3,9 +3,10 @@
     width: 25rem;
     background-color: $color-primary;
     position: fixed;
+    display: inline-block;
     top: 0;
-    left: 0;
-    transform: translateX(-25rem);
+    right: 0;
+    transform: translateX(25rem);
 }
 
 .nav, .hamburger {
@@ -17,12 +18,12 @@
 }
 
 .nav__list {
-    margin-top: 5rem;
+    margin-top: 6rem;
     list-style: none;
 }
 
 .nav__item {
-    margin: 2rem;
+    margin: 2rem 4rem;
     font-size: $size-xs*2;
 }
 
@@ -37,10 +38,12 @@
     border-radius: 4px;
     margin: 2rem;
     position: fixed;
+    right: 0;
+
 }
 
 .hamburger--active {
-    transform: translateX(25rem);
+    transform: translateX(-25rem);
 }
 
 .hamburger__box {
