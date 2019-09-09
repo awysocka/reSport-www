@@ -19,9 +19,9 @@
     width: 90%;
     height: 90%;
     background-color: $color-white;
-    padding: 4rem 3rem;
+    padding: $space-s*2 $space-m;
     text-align: center;
-    border-radius: 4px;
+    border-radius: $radius-s;
     overflow: auto;
     position: relative;
     margin-top: 0;
@@ -31,11 +31,11 @@
 .popup__close{
     position: absolute;
     top: calc(5% + 1rem);
-    right: calc(5% + 2rem);
+    right: calc(5% + 3rem);
     font-size: $size-xs*3;
     color: $color-grey-dark;
     transition: color .3s ease;
-    z-index: 2000;
+    z-index: $popup;
 
     &:hover {
         color: $color-secondary;

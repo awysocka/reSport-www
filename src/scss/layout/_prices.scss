@@ -1,14 +1,14 @@
 
 .prices {
-    padding-top: 4rem;
+    padding-top: $space-s*2;
 
     &__box {
         text-align: center;
         padding: 3rem;
-        margin: 4rem 2rem 0 2rem;
+        margin: $space-s*2 $space-s 0 $space-s;
         background-color: $color-grey-light;
         min-height: 10rem;
-        border-radius: 4px;
+        border-radius: 4px; 
     }
 
     .price {

@@ -1,4 +1,20 @@
-.heading_secondary {
+.heading--primary{
+    text-align: center;
+    font-size: $size-xs*3;
+    color: $color-primary;
+    margin-bottom: $space-s*2; 
+    font-weight: 400;
+}
+
+    @include respond(tab-port) {
+       .heading--primary {
+           font-size: $size-xs*4;
+           margin-bottom: $space-m*2;
+       }
+
+    }
+
+.heading--secondary {
     text-align: center;
     font-size: $size-xs*3;
     color: $color-grey-dark;
@@ -9,15 +25,31 @@
     }
 }
 
-.heading-tertiary {
-    font-size: $size-xs + $size-m;
-    color: $color-grey-light;
-    font-weight: 300;
-    line-height: 1.6;
+.heading--tertiary {
     margin-bottom: 1rem;
+    color: $color-grey-dark;
+    font-size: $size-l;
+    font-weight: 700;
+
+    &--light {
+        color: $color-grey-light;
+        display: inline-block;
+        margin-left: $space-s;
+    }
+
+    &--dark {
+        color: $color-grey-dark;
+        display: inline-block;
+        margin-left: $space-s;
+    }
+
+    &--thin {
+        font-weight: 300;
+        color: $color-grey-light;
+    }
 }
 
-.heading_fourth {
+.heading--fourth {
     margin-bottom: 1rem;
     color: $color-grey-dark;
     font-size: $size-xs*2;
@@ -25,12 +57,12 @@
     &--uppercase {
         text-transform: uppercase;
     }
-}
 
-.heading_fifth {
-    margin-bottom: 1rem;
-    color: $color-white;
-    font-size: $size-l;
+    &--white {
+        color: $color-white;
+    }
+
+
 }
 
 .paragraph {
@@ -38,6 +70,11 @@
     margin-bottom: 2rem;
     color: $color-grey-dark;
     line-height: 1.6;
+}
+
+.paragraph--cta {
+    color: $color-grey-light;
+    margin-bottom: 0rem;
 }
 
 .paragraph--white {
@@ -53,7 +90,6 @@
 
 .paragraph--contact {
     color: $color-grey-light;
-    padding-bottom: 0;
 }
 
 .paragraph--copyright {
@@ -63,7 +99,7 @@
 }
 
 .paragraph--register {
-    font-size: $size-l;
+    font-size: $size-xs*2;
     font-weight: 700;
     margin-bottom: 4rem;;
     margin-top: 4rem;

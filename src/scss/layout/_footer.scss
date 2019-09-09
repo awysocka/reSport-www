@@ -1,7 +1,7 @@
 .footer {
-    margin-top: 4rem;
+    margin-top: $space-s*2;
     background-color: $color-grey-dark;
-    padding: 4rem 2rem 0;
+    padding: $space-s*2 $space-s 0;
 }
 
 // contact info
@@ -9,7 +9,7 @@
 .contact {
 
     &__info {
-        padding: 4rem 0rem;
+        padding: $space-s*2 0rem;
     }
     
     &__item {
@@ -71,7 +71,7 @@
 }
 
 .copyright {
-    margin-top: 4rem;
+    margin-top: $space-s*2;
     border-top: 1px solid $color-white;
     text-align: center;
 

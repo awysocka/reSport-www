@@ -18,126 +18,153 @@
             </button>
             <nav class="nav" id="nav">
                 <ul class="nav__list" id="nav__list">
-                    <li class="nav__item"><a href="#oferta" class="list_link link--white">Oferta</a></li>
-                    <li class="nav__item"><a href="#o_nas" class="list_link link--white">O nas</a></li>
-                    <li class="nav__item"><a href="#cennik" class="list_link link--white">Cennik</a></li>
-                    <li class="nav__item"><a href="#kontakt" class="list_link link--white">Kontakt</a></li>
+                    <li class="nav__item"><a href="#oferta" class="nav__link">Oferta</a></li>
+                    <li class="nav__item"><a href="#o_nas" class="nav__link">O nas</a></li>
+                    <li class="nav__item"><a href="#cennik" class="nav__link">Cennik</a></li>
+                    <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
                 </ul>
             </nav>
         <header class="header">
-            <img src="img/logo.png" alt="logo_resport">
-            <button class="button-cta"><a href="#kontakt" class="link--white">Umów wizytę</a></button>
+            <div class="logotyp">
+                <img src="img/logo.png" alt="logo_resport">
+                <h1 class="heading--primary">Centrum rehabilitacji</h1>
+            </div>
+            <button class="button-cta"><a href="#kontakt" class="link--contact">Umów wizytę</a></button>
+
+            <!-- desktop element start-->
+            <div class="container">
+                <div class="container__box box--1" >
+                    <i class="box--icon fas fa-users"></i>
+                    <h3 class="heading--tertiary heading--tertiary--dark">O nas</h3>
+                    <p class="paragraph">W naszym gabinecie prowadzimy kompleksową rehabilitację narządu ruchu za pomocą indywidualnie dobranych metod fizjoterapeutycznych.</p>
+                </div>
+                <div class="container__box box--2">
+                    <i class="box--icon fas fa-phone-alt"></i>
+                    <h3 class="heading--tertiary heading--tertiary--light">Umów wizytę</h3>
+                    <p class="paragraph paragraph--cta">W celu zapisu zachęcamy do kontaktu z nami: </p>
+                    <p class="paragraph paragraph--cta">dr Anna Rojek <a href="tel:+48724003582" class="link--contact"> 724 003 582</a></p>
+                    <p class="paragraph paragraph--cta">dr Radosław Rojek <a href="tel:+48601933337" class="link--contact"> 601 933 337</a></p>
+                </div>
+                <div class="container__box box--3">
+                        <i class="box--icon fas  fa-clock"></i>
+                    <h3 class="heading--tertiary heading--tertiary--dark">Godziny otwarcia</h3>
+                    <p class="paragraph"><span>Poniedziałek-piątek</span> 8.00-18.00</p>
+                    <p class="paragraph"><span>Sobota</span> 9.00-13.00</p>                                                
+                </div>
+            </div>
+            <!-- desktop element end-->
         </header>
+    <main>
         <section class="service" id="oferta">
-            <h2 class="heading_secondary">Oferta</h2>
-            <div class="service_box">
-                <h4 class="heading_fourth">Fizjoterapia ortopedyczna</h4>
-                <ul class="service_items">
+            <h2 class="heading--secondary">Oferta</h2>
+            <div class="service__box">
+                <h4 class="heading--fourth">Fizjoterapia ortopedyczna</h4>
+                <ul class="service__items">
                     <li>problemy bólowe kręgosłupa i stawów obwodowych</li>
                     <li>urazy układu mięśniowego i wiezadlowego</li>
                     <li>urazy i zwyrodnienia stawow</li>
                     <li>przed i po operacjach narządu ruchu</li>
                 </ul>
             </div>
-            <div class="service_box">
-                <h4  class="heading_fourth">Fizjoterapia sportowa</h4>
-                <ul class="service_items">
+            <div class="service__box">
+                <h4  class="heading--fourth">Fizjoterapia sportowa</h4>
+                <ul class="service__items">
                     <li>kompleksowa fizjoterapia po urazach sportowych i operacjach narządu ruchu </li>
                     <li>funkcjonalny trening medyczny dostosowany do konkretnej dyscypliny sportowejo</li>
                     <li>ocena możliwości powrotu do sportu po kontuzji lub operacji </li>
                 </ul>
             </div>
-            <div class="service_box">
-                <h4 class="heading_fourth">Fizjoterapia uroginekologiczna </h4>
-                <ul class="service_items">
+            <div class="service__box">
+                <h4 class="heading--fourth">Fizjoterapia uroginekologiczna </h4>
+                <ul class="service__items">
                     <li>kompleksowa terapia w schorzeniach układu moczowo-płciowego dla Pań w każdym wieku</li>
                     <li>ocena mięśni dna miednicy po porodzie</li>
                     <li>ocena mięśni brzucha po porodzie ( z wykorzystaniem USG) </li>
                 </ul>
             </div>
-            <div class="service_box">
-                <h4  class="heading_fourth">Fizjoterapia neurologiczna</h4>
-                <ul class="service_items">
+            <div class="service__box">
+                <h4  class="heading--fourth">Fizjoterapia neurologiczna</h4>
+                <ul class="service__items">
                     <li>rehabilitacja pacjentów w chorobach nerwowo-mięśniowych i neurologicznych takich jak: udary mózgu, stwardnienie rozsiane </li>
                 </ul>
             </div>
         </section>
         <div class="divider">
-            <h3 class="heading-tertiary">Szybka i skuteczna pomoc w powrocie do pełnej sprawności</h3>
-            <a href="#kontakt" class="link-cta link--white">Umów się na wizytę już dziś</a>
+            <p class="heading--tertiary heading--tertiary--thin">Szybka i skuteczna pomoc w powrocie do pełnej sprawności</p>
+            <a href="#kontakt" class="link-cta ">Umów się na wizytę już dziś</a>
         </div>
         <section class="about" id="o_nas">
-            <h2 class="heading_secondary">O nas</h2>
+            <h2 class="heading--secondary">O nas</h2>
             <div class="about__box">
                 <div class="about__img about__img--item1"></div> 
-                <h4 class="heading_fourth">Anna Rojek</h4>
+                <h4 class="heading--fourth">Anna Rojek</h4>
                 <p class="paragraph">doktor nauk o kulturze fizycznej,
                     specjalizuje się w fizjoterapi uroginekologicznej,
                     kobiet w ciąży, ortopedycznej
                     oraz neurologicznej</p>
-                <p class="paragraph">kontakt: <a href="tel:+48724003582" class="link--orange"> 724 003 582</a></p>
-                <a class="link--more link--orange" id="link-more-anna" href="#">więcej</a>
+                <p class="paragraph">kontakt: <a href="tel:+48724003582" class="link--about"> 724 003 582</a></p>
+                <a class="link--about" id="link-more-anna" href="#">więcej</a>
             </div>
             <div class="about__box">
                 <div class="about__img about__img--item2"></div> 
-                <h4 class="heading_fourth">Radosław Rojek</h4>
+                <h4 class="heading--fourth">Radosław Rojek</h4>
                 <p class="paragraph">doktor nauk o kulturze fizycznej,
                     specjalizuje się w fizjoterapi ortopedycznej,
                     sportowej, pourazowej, pooperacyjnej, 
                     geriatrycznej i korekcji wad postawy
                     </p>
-                <p class="paragraph">kontakt: <a href="tel:+48601933337" class="link--orange"> 601 933 337</a></p>
-                <a class="link--more link--orange" id="link-more-radoslaw" href="#">więcej</a>
+                <p class="paragraph">kontakt: <a href="tel:+48601933337" class="link--about"> 601 933 337</a></p>
+                <a class="link--about" id="link-more-radoslaw" href="#">więcej</a>
             </div>
         </section>
         <section class="benefits">
-            <h2 class="heading_secondary heading_secondary--white">Dlaczego my?</h2>
+            <h2 class="heading--secondary heading--secondary--white">Dlaczego my?</h2>
             <div class="benefits__box">
                 <i class="fas benefits__icon fa-user-check"></i>
-                <h5 class="heading_fifth">Indywidualne podejście</h5>
+                <h4 class="heading--fourth heading--fourth--white">Indywidualne podejście</h4>
                 <p class="paragraph paragraph--white">Podczas pierwszej wizyty wykonujemy diagnostykę fizjoterapeutyczną oraz ustalamy program dopasowany do obecnego stanu pacjenta.</p>
             </div>
             <div class="benefits__box">
                 <i class="fas benefits__icon fa-star"></i>
-                <h5 class="heading_fifth">Wysoka jakość usług</h5>
+                <h4 class="heading--fourth heading--fourth--white">Wysoka jakość usług</h4>
                 <p class="paragraph paragraph--white">Stosujemy metody, których skuteczność potwierdzona jest aktualnymi doniesieniami naukowymi.</p>
             </div>
             <div class="benefits__box">
                 <i class="fas benefits__icon fa-graduation-cap"></i>
-                <h5 class="heading_fifth">Wykwalifikowani fizjoterapeuci</h5>
+                <h4 class="heading--fourth heading--fourth--white">Wykwalifikowani fizjoterapeuci</h4>
                 <p class="paragraph paragraph--white">Zdobywamy wiedzę poprzez uczestnictwo w licznych kursach i szkoleniach.</p>
             </div>
             
         </section>
         <section class="prices" id="cennik">
-            <h2 class="heading_secondary">Cennik</h2>
+            <h2 class="heading--secondary">Cennik</h2>
             <div class="prices__box">
-                <h4 class="heading_fourth heading_fourth--uppercase">Pierwsza terapia</h4>
+                <h4 class="heading--fourth heading--fourth--uppercase">Pierwsza terapia</h4>
                 <span class="price">75zł</span>
                 <span class="paragraph">do 45 min</span>
             </div>
             <div class="prices__box">
-                <h4 class="heading_fourth heading_fourth--uppercase">Kolejne terapie</h4>
+                <h4 class="heading--fourth heading--fourth--uppercase">Kolejne terapie</h4>
                 <span class="price">50 zł / 75 zł</span>
                 <span class="paragraph">30 min / 45 min</span>
             </div>
             <div class="prices__box">
-                <h4 class="heading_fourth heading_fourth--uppercase">Terapia uroginekologiczna</h4>
+                <h4 class="heading--fourth heading--fourth--uppercase">Terapia uroginekologiczna</h4>
                 <span class="price">100 zł</span>
                 <span class="paragraph">do 60 min</span>
             </div>
             <div class="prices__box">
-                <h4 class="heading_fourth heading_fourth--uppercase">Wizyta domowa</h4>
+                <h4 class="heading--fourth heading--fourth--uppercase">Wizyta domowa</h4>
                 <span class="price">75 zł / 100 zł</span>
                 <span class="paragraph">30 min / 45 min</span>
             </div>
             <div class="prices__box">
-                <h4 class="heading_fourth heading_fourth--uppercase">Fala uderzeniowa</h4>
+                <h4 class="heading--fourth heading--fourth--uppercase">Fala uderzeniowa</h4>
                 <span class="price">30 zł</span>
                 <span class="paragraph">zabieg</span>
             </div>
             <div class="prices__box">
-                <h4 class="heading_fourth heading_fourth--uppercase">Inne</h4>
+                <h4 class="heading--fourth heading--fourth--uppercase">Inne</h4>
                 <p class="paragraph">Laseroterapia, krioterapia, elektroterapia, 
                         magnetronik, ultradźwięki, solux</p>
                 <span class="price">5 zł</span>
@@ -146,7 +173,7 @@
             <p class="paragraph paragraph--orange">* płatność gotówką na miejscu</p>
         </section>
         <div class="gallery">
-            <h2 class="heading_secondary">Nasze centrum</h2>
+            <h2 class="heading--secondary">Nasze centrum</h2>
             <figure class="lokal__photo">
                 <img src="img/lokal_photo_1.jpg" alt="wnętrze lokalu">
             </figure>
@@ -157,8 +184,9 @@
                 <img src="img/lokal_photo_3.jpg" alt="wnętrze lokalu">
             </figure>
         </div>
+    </main>
         <footer class="footer" id="kontakt">
-            <h2 class="heading_secondary heading_secondary--white">Kontakt</h2>
+            <h2 class="heading--secondary heading--secondary--white">Kontakt</h2>
             <section class="contact__info">
                 <ul class="contact__list">
                     <li class="contact__item">
@@ -226,7 +254,7 @@
             </section>
             <div class="copyright">
                 <p class="paragraph--copyright">Copyright &copy; 2019 Radosław Rojek ReSport<br>
-                 Projekt i wykonanie <a href="https://annawysocka.pl/" class="link--white" target="blank">Anna Wysocka</a> </p>
+                 Projekt i wykonanie <a href="https://annawysocka.pl/" class="link--contact" target="blank">Anna Wysocka</a> </p>
             </div>
         </footer>
     </div>
@@ -236,7 +264,7 @@
             <a href="#" class="popup__close" >&times;</a>
             <div class="popup__box">
                 
-                <h4 class="heading_fourth">Anna Rojek</h4>
+                <h4 class="heading--fourth">Anna Rojek</h4>
                 <div class="about__img about__img--item1"></div> 
                 <p class="paragraph">Jestem absolwentką Akademii Wychowania Fizycznego w Krakowie,
                         gdzie ukończyłam kolejno studia licencjackie, magisterskie, a w 2017 uzyskałam tytuł doktora nauk o
@@ -246,23 +274,23 @@
                         fizjoterapii ortopedycznej, neurologicznej i uroginekologicznej.
                         Znajduję się również na liście
                         <a href="https://ptug.pl/wykaz-certyfikowanych-lekarzy-i-fizjoterapeutow/?specjalista=fizjoterapeuta"
-                        class="link--orange" target="_blank" rel="noopener noreferrer">Certyfikowanych terapeutów Uroginekologicznych Polskiego Towarzystwa
+                        class="link--about" target="_blank" rel="noopener noreferrer">Certyfikowanych terapeutów Uroginekologicznych Polskiego Towarzystwa
                         Uroginekologicznego.</a> Od 2013 roku jestem tłumaczem szkoleń dla
                         fizjoterapeutów w firmie Reha Plus w Krakowie.</p>
                     <p class="paragraph">
                         Poza pracą fizjoterapeuty od 2016 roku jestem certyfikowanym nauczycielem Jogi i prowadzę zajęcia w
-                        swojej własnej<a href="http://yogatarnow.pl/" class="link--orange" target="_blank" rel="noopener noreferrer"> szkole.</a>
+                        swojej własnej<a href="http://yogatarnow.pl/" class="link--about" target="_blank" rel="noopener noreferrer"> szkole.</a>
                         Ponad to elementy jogi wykorzystuję w terapii swoich pacjentek.
                     </p>
-                <p class="paragraph paragraph--register">Umów wizytę: <a href="tel:+48724003582" class="link--orange"> 724 003 582</a></p>
-                <p class="paragraph"><a href="http://annarojek.pl/"  target="blank" class="link--orange">annarojek.pl</a></p>
+                <p class="paragraph paragraph--register">Umów wizytę: <a href="tel:+48724003582" class="link--about paragraph--register"> 724 003 582</a></p>
+                <p class="paragraph"><a href="http://annarojek.pl/"  target="_blank" class="link--about">annarojek.pl</a></p>
             </div>
         </div>
     <!-- popup Radosław -->
         <div class="popup" id="popup-radoslaw">
             <a href="#" class="popup__close">&times;</a>
             <div class="popup__box">
-                <h4 class="heading_fourth">Radosław Rojek</h4>
+                <h4 class="heading--fourth">Radosław Rojek</h4>
                 <div class="about__img about__img--item2"></div>
                 <p class="paragraph">W 2013 roku ukończyłem studia magisterskie z fizjoterapii na wydziale medycznym Uniwersytetu Rzeszowskiego. W 2019 roku uzyskałem tytuł doktora nauk o kulturze fizycznej na Akademii Wychowania Fizycznego w Krakowie. Ukończyłem Również studia licencjackie z wychowania fizycznego ze specjalizacją z gimnastyki korekcyjnej na Państwowej Wyższej Szkole Zawodowej w Tarnowie w 2011 roku.
                     </p>
@@ -270,8 +298,8 @@
                         Pracowałem również jako fizjoterapeuta drużyny piłkarskiej ZKS Unia Tarnów. 
                         W swojej pracy wykorzystuje głównie terapię manualną, medyczny trening funkcjonalny, elementy jogi oraz gimnastyki.  
                         </p>
-                <p class="paragraph">Poza pracą fizjoterpeuty od 2016 roku jestem certyfikowany nauczycielem jogi i prowadzę zajęcia w swojej własnej <a href="http://yogatarnow.pl/" class="link--orange" target="_blank" rel="noopener noreferrer">szkole.</a> Jestem również instruktorem pływania oraz gimnastyki sportowej.</p>
-                <p class="paragraph paragraph--register">Umów wizytę: <a href="tel:+48601933337" class="link--orange"> 601 933 337</a></p>
+                <p class="paragraph">Poza pracą fizjoterpeuty od 2016 roku jestem certyfikowany nauczycielem jogi i prowadzę zajęcia w swojej własnej <a href="http://yogatarnow.pl/" class="link--about" target="_blank" rel="noopener noreferrer">szkole.</a> Jestem również instruktorem pływania oraz gimnastyki sportowej.</p>
+                <p class="paragraph paragraph--register">Umów wizytę: <a href="tel:+48601933337" class="link--about paragraph--register"> 601 933 337</a></p>
             </div>
         </div>
 

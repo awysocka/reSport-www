@@ -1,3 +1,4 @@
+
 .header {
     height: 100vh;
     background-image: url(../img/header_img.jpg);
@@ -12,12 +13,12 @@
     img {
         max-width: 20rem;
         width: 60%;
-        margin: 4rem auto;
+        margin: $space-s auto;
         
     }
 
     .button-cta {
-        padding: .8rem 2rem;
+        padding: .8rem $space-s;
         display: block;
         background-color: $color-secondary;
         border: 1px solid $color-secondary;
@@ -25,7 +26,104 @@
         border-radius: 5px;
         font-size:$size-m; 
     }
+
+    .container {
+        display: none;
+    }
 }
+
+@include respond(tab-port) {
+
+    .header img {
+        max-width: 40rem;
+        width: 70%;
+    }
+
+    .header .button-cta {
+        font-size: $size-l;
+    }
+
+}
+
+@include respond(tab-land) {
+
+    .header .button-cta {
+        display: none;
+    }
+
+    @supports (display:grid) {
+        .header {
+            min-height: 650px;
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 7rem 1fr 1fr;
+
+            .heading--primary {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .logotyp {
+            grid-row-start: 2;
+        }
+
+        .header img {
+            max-width: 30rem;
+            width: 20%;
+        }
+        .header .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: $space-s;
+            grid-row-start: 3;
+            justify-content: center;
+            max-width: 1100px;
+            padding: $space-s;
+
+
+            &__box {
+                max-height: 220px;
+                padding: $space-s;
+
+                .paragraph {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .box--1, .box--3 {
+                background-color: rgba($color-white, .8);
+                border-radius: $radius-s;
+
+                .box--icon {
+                    font-size: $size-xs*4;
+                    color: $color-primary;
+                    vertical-align: middle;
+                    margin-bottom: $space-s;
+                }
+            }
+
+            .box--2 {
+                background-color: rgba($color-primary, .7) ;
+                border-radius: $radius-s;
+
+                .box--icon {
+                    font-size: $size-xs*4;
+                    color: $color-grey-light;
+                    vertical-align: middle;
+                    margin-bottom: $space-s;
+                }
+            }
+        }
+    }
+
+    
+    
+
+}
+
+
+
 
 
 

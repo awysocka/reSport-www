@@ -4,3 +4,20 @@
     height: 3px;
     position: absolute;
 }
+
+//MEDIA QUERIES
+
+@mixin respond($breakpoints) {
+    @if $breakpoints == tab-port {
+        @media screen and (min-width: 768px) and (orientation: portrait) {@content}
+    };
+
+    @if $breakpoints == tab-land {
+        @media screen and (min-width: 960px) {@content}
+    };
+
+    @if $breakpoints == desktop {
+        @media screen and (min-width: 1366px) {@content}
+    }
+
+}

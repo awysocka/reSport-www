@@ -4,6 +4,7 @@
     background-color: $color-primary;
     position: fixed;
     display: inline-block;
+    background-color: transparent;
     top: 0;
     right: 0;
     transform: translateX(25rem);
@@ -19,14 +20,59 @@
 }
 
 .nav__list {
-    margin-top: 6rem;
+    margin-top: $space-m*2;
     list-style: none;
 }
 
 .nav__item {
-    margin: 2rem 4rem;
+    margin: $space-s $space-s*2;
     font-size: $size-xs*2;
+    color: $color-white;
+
 }
+
+.nav__link {
+    color: $color-grey-light;
+    transition: all .2s .1s ease-in-out;
+
+    &:hover {
+        color: $color-white;
+    }
+
+}
+
+
+@include respond(tab-land) {
+    @supports (display:grid) {
+        .nav {
+            height: 6rem;
+            width: 100vw;
+            transform: translateX(0);
+            
+            &__list {
+                display: flex;
+                justify-content: center;
+                margin: 0; 
+            }
+
+            .nav__link {
+                color: $color-grey-dark;
+                transition: all .2s .1s ease-in-out;
+            
+                &:hover {
+                    color: $color-secondary;
+                }
+            
+            }
+    
+        }
+
+        .nav--colored {
+            background-color: $color-grey-light;
+        }
+    }
+}
+
 
 // HAMBURGER
 
@@ -36,8 +82,8 @@
     cursor: pointer;
     background-color: $color-primary;
     border: none;
-    border-radius: 4px;
-    margin: 2rem;
+    border-radius: $radius-s;
+    margin: $space-s;
     position: fixed;
     right: 0;
     
@@ -93,4 +139,14 @@
 .hamburger--active .hamburger__inner::after {
     transform: translateY(-10px) rotate(-45deg);
 }
+
+@include respond(tab-land){
+    @supports (display:grid) {
+        .hamburger {
+            display: none;
+        }
+    }
+}
+
+
 

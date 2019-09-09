@@ -8,14 +8,15 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;      
 }
 
 body {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;   
+    font-family: 'Lato', sans-serif; 
+    background-color: $color-white;  
 }
+
 
 .wrapper {
     min-width: 37rem;
@@ -29,32 +30,35 @@ img {
 }
 
 a {
-    &:link,
-    &:visited {
-        text-decoration: none;
-        padding: 0;
-        cursor: pointer; 
-    }
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
 }
 
-.link--white {
+.link--contact {
     color: $color-grey-light;
-    transition: color .3s ease;
+    transition: all .3s ease;
+
 
     &:hover {
         color: $color-white;
-        cursor: pointer;
     }
 }
 
-.link--orange {
+.link--about {
     color: $color-grey-dark;
     border-bottom: .5px solid $color-grey-dark;
+    transition: all .3s ease;
+    font-size: $size-m;
+    padding: .2rem;
     transition: all .3s ease;
 
     &:hover {
         color: $color-secondary;
         border-bottom: .5px solid $color-secondary;
-        cursor: pointer;
     }
 }
+
+
+
+
