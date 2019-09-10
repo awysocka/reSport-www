@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba($color-grey-dark, .6) ;
-    z-index: $popup;
+    z-index: $z-index-popup;
     position: fixed;
     top: 0;
     justify-content: center;
@@ -35,7 +35,7 @@
     font-size: $size-xs*3;
     color: $color-grey-dark;
     transition: color .3s ease;
-    z-index: $popup;
+    z-index: $z-index-popup;
 
     &:hover {
         color: $color-secondary;
