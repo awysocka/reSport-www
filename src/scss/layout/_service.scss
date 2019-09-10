@@ -2,26 +2,24 @@
     padding-top: $space-s*2;
   
     .heading_fourth:not(:last-child) {
-        margin-bottom: 1rem;
         color: $color-grey-dark;
-        font-size: $size-xs*2;
-        
+        font-size: $font-size-xs*2; 
+        margin-bottom: 1rem;   
     }
 
     &__box {
+        min-height: 25rem;
+        background-color: $color-grey-light;
+        border-radius: $radius-s;
         padding: $space-m;
         margin: $space-s*2 $space-s;
-        background-color: $color-grey-light;
-        min-height: 25rem;
-        border-radius: $radius-s;
     }
 
     &__items {
-        font-size: $size-m;
-        line-height: 1.6;
+        font-size: $font-size-m;
         color: $color-grey-dark;
+        line-height: 1.6;
     }
-
     
     &__pictures {
         display: none;
@@ -32,93 +30,91 @@
 @include respond(tab-land) {
     @supports (display:grid) {
 
-     .service{
-        max-width: 1080px;
-        padding: $space-m*2 $space-s;
-        margin: 0 auto;
-        display: grid;
-        grid-gap: 4rem 2rem;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-        grid-template-rows: 7rem repeat(2, minmax(300px, 1fr));
-
-        &__box {
-            padding: $space-m $space-s*2; 
-            min-height: 30rem;
-            margin: 0;
-            min-width: 30rem;
-            height: 32rem;
-        }
-        &__pictures {
-            padding: $space-m;
-            margin: 0;
-            height: 32rem;
-            display: flex;
+        .service {
+            max-width: $max-width-grid;
+            display: grid;
+            grid-gap: 4rem 2rem;
             justify-content: center;
             align-items: center;
-            border-radius: $radius-s;
-            
-    
-            &--player {
-                background-color: $color-primary;
-                font-size: $size-l*5;
-                color: $color-white;
-            } 
-    
-            &--women {
-                background-color: $color-secondary;
-                font-size: $size-l*5;
-                color: $color-white;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-template-rows: 7rem repeat(2, minmax(300px, 1fr));
+            padding: $space-m*2 $space-s;
+            margin: 0 auto;
+
+            &__box {
+                height: 33rem;
+                min-height: 33rem;
+                min-width: 30rem;
+                padding: $space-m $space-s*2; 
+                margin: 0;
             }
-        }
 
-        h2 {
-            grid-row-start: 1;
-            grid-column: 2;
-        }
-
-        &__box--1 {
-            grid-row-start: 2;
-            grid-column: 1;
-        }
-
-        &__box--2 {
-            grid-row-start: 2;
-            grid-column: 2;
-        }
-
-        &__pictures {
-
-            &--player{
-                grid-row-start: 2;
-                grid-column: 3;  
-            }
-        }
-
-        &__pictures {
-
-            &--women{
-                grid-row-start: 3;
-                grid-column: 1;  
-            }
-        }
-
-        &__box--3 {
-            grid-row-start: 3;
-            grid-column: 2;
-        }
-
-        &__box--4 {
-            grid-row-start: 3;
-            grid-column: 3;
-        }
-
-        .service__pictures {
-            display: flex;
-        }
-     }   
+            &__pictures {
+                padding: $space-m;
+                margin: 0;
+                height: 33rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $radius-s;
+                
+                &--player {
+                    background-color: $color-primary;
+                    font-size: $font-size-l*5;
+                    color: $color-white;
+                } 
         
+                &--women {
+                    background-color: $color-secondary;
+                    font-size: $font-size-l*5;
+                    color: $color-white;
+                }
+            }
 
+            h2 {
+                grid-row-start: 1;
+                grid-column: 2;
+            }
+
+            &__box--1 {
+                grid-row-start: 2;
+                grid-column: 1;
+            }
+
+            &__box--2 {
+                grid-row-start: 2;
+                grid-column: 2;
+            }
+
+            &__pictures {
+
+                &--player{
+                    grid-row-start: 2;
+                    grid-column: 3;  
+                }
+            }
+
+            &__pictures {
+
+                &--women{
+                    grid-row-start: 3;
+                    grid-column: 1;  
+                }
+            }
+
+            &__box--3 {
+                grid-row-start: 3;
+                grid-column: 2;
+            }
+
+            &__box--4 {
+                grid-row-start: 3;
+                grid-column: 3;
+            }
+
+            .service__pictures {
+                display: flex;
+            }
+        }   
     }
 }

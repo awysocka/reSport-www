@@ -12,7 +12,7 @@
     }
 
     &__icon {
-        font-size: $size-xs*4;
+        font-size: $font-size-xs*4;
         color: $color-white;
         padding: $space-s;
     }
@@ -21,37 +21,37 @@
 @include respond(tab-land) {
     @supports (display:grid) {
 
-            .container__benefits {
-                margin: 0 auto;
-                padding: $space-s;
-                max-width: 1080px;
-                display: grid;
-                justify-content: center;
-                align-items: baseline;
-                grid-gap: $space-s*2 $space-s;
-                grid-template-columns: repeat(3, minmax(300px, 1fr));
-                grid-template-rows: 7rem 1fr;
+        .container__benefits {
+            max-width: $max-width-grid;
+            display: grid;
+            justify-content: center;
+            align-items: baseline;
+            grid-gap: $space-s*2 $space-s;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-template-rows: 7rem 1fr;
+            margin: 0 auto;
+            padding: $space-s;
+        }
+
+        .benefits {
+            padding: $space-m*2 $space-s;
+
+            &__box:not(:last-child) {
+                margin: 0;
+            }
+            
+            &__box--item1 {
+                grid-column-start: 1;
             }
 
-            .benefits {
-                padding: $space-m*2 $space-s;
-
-                &__box:not(:last-child) {
-                    margin: 0;
-                }
-                
-                &__box--item1 {
-                    grid-column-start: 1;
-                }
-    
-                &__box--item2 {
-                    grid-column-start: 2;
-                }
-    
-                &__box--item3 {
-                    grid-column-start: 3;
-                }
+            &__box--item2 {
+                grid-column-start: 2;
             }
+
+            &__box--item3 {
+                grid-column-start: 3;
+            }
+        }
 
         h2 {
             grid-column-start: span 3;

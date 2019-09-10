@@ -3,20 +3,19 @@
     padding-top: $space-s*2;
 
     &__box {
-        text-align: center;
-        padding: 3rem;
-        margin: $space-s*2 $space-s 0 $space-s;
-        background-color: $color-grey-light;
         min-height: 10rem;
+        text-align: center;
+        background-color: $color-grey-light;
         border-radius: 4px; 
+        padding: $space-m;
+        margin: $space-s*2 $space-s 0 $space-s;
     }
 
     .price {
         display: block;
-        color: $color-grey-dark;
-        font-size: $size-xs*2;
+        font-size: $font-size-xs*2;
         font-weight: 700;
-
+        color: $color-grey-dark;
     }
 }
 
@@ -24,13 +23,13 @@
     @supports (display:grid) {
 
         .prices {
-            max-width: 1080px;
-            padding: $space-m*2 $space-s;
-            margin: 0 auto;
+            max-width: $max-width-grid;
             display: grid;
             grid-gap: $space-s*2 $space-s;
             grid-template-columns: repeat(3, minmax(300px, 1fr));
             grid-template-rows: 7rem repeat(2, minmax(210px, 1fr));
+            padding: $space-m*2 $space-s;
+            margin: 0 auto;
 
             .paragraph {
                 grid-column-start: span 3;
@@ -43,9 +42,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                
-                
+                justify-content: center; 
             }
 
         }

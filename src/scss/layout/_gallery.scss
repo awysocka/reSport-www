@@ -14,13 +14,13 @@
     @supports (display:grid) {
 
         .gallery {
-            max-width: 1080px;
-            padding: $space-s;
-            margin: 0 auto;
+            max-width: $max-width-grid;
             display: grid;
             grid-gap: $space-s*2 $space-s;
             grid-template-columns: repeat(3, minmax(300px, 1fr));
             grid-template-rows: 7rem minmax(210px, 1fr);
+            padding: $space-s;
+            margin: 0 auto;
 
             .lokal__photo {
                 margin: 0;

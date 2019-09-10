@@ -7,53 +7,34 @@
     }
 
     &__img {
-        
-        
 
         &--item1 {
-            width: 25rem;
-            height: 25rem;
-            background-image: url(../../img/profile_img_ania.jpg);
-            background-size: cover;
-            background-position: center;
-            display: block;
-            border-radius: 50%;
-            margin: $space-s auto;    
+            @include img__personal(url(../../img/profile_img_ania.jpg));
         }
 
         &--item2 {
-            width: 25rem;
-            height: 25rem;
-            background-image: url(../../img/profile_img_radek.jpg);
-            background-size: cover;
-            background-position: center;
-            display: block;
-            border-radius: 50%;
-            margin: $space-s auto;    
-            margin: 2rem auto;
+            @include img__personal(url(../../img/profile_img_radek.jpg));
         }
     }
-
-    
+ 
 }
 
 @include respond(tab-land) {
     @supports (display:grid) {
 
         .about {
-            padding: $space-m*2 $space-s;
-            max-width: 1080px;
-            margin: 0 auto;
+            max-width: $max-width-grid;
             display: grid;
-            grid-gap: 4rem 2rem;
+            grid-gap: $space-s*2 $space-s;
             align-items: center;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 7rem 1fr;
+            padding: $space-m*2 $space-s;
+            margin: 0 auto;
 
             &__box {
                 max-width: 30rem;
-                margin: 0 auto;
-                
+                margin: 0 auto;  
             }
         }
 
@@ -61,7 +42,5 @@
             grid-column-start: span 2;
         }
     }
-
 }
-
 

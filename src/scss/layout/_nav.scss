@@ -4,7 +4,6 @@
     background-color: $color-primary;
     position: fixed;
     display: inline-block;
-    background-color: transparent;
     top: 0;
     right: 0;
     transform: translateX(25rem);
@@ -25,10 +24,9 @@
 }
 
 .nav__item {
-    margin: $space-s $space-s*2;
-    font-size: $size-xs*2;
+    font-size: $font-size-xs*2;
     color: $color-white;
-
+    margin: $space-s $space-s*2;
 }
 
 .nav__link {
@@ -38,13 +36,14 @@
     &:hover {
         color: $color-white;
     }
-
 }
 
 
 @include respond(tab-land) {
     @supports (display:grid) {
+        
         .nav {
+            background-color: transparent;
             height: 6rem;
             width: 100vw;
             transform: translateX(0);
@@ -86,8 +85,6 @@
     margin: $space-s;
     position: fixed;
     right: 0;
-    
-
 }
 
 .hamburger--active {
@@ -147,6 +144,4 @@
         }
     }
 }
-
-
 

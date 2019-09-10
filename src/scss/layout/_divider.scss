@@ -1,13 +1,13 @@
 .divider {
+    text-align: center;
     background-color: $color-primary;
     margin-top: $space-s*2 ;
     padding: $space-m*2 $space-s;
-    text-align: center;
-
+    
     .link-cta {
-        color: $color-grey-light;
-        font-size: $size-xs*2;
+        font-size: $font-size-xs*2;
         font-weight: 300;
+        color: $color-grey-light;
         padding: .5rem;
         border-bottom: 1px solid $color-grey-light;
         transition: all .3s ease;
@@ -16,8 +16,6 @@
             color: $color-white;
             border-bottom: 1px solid $color-white;
         }
-
-
     }
 }
 

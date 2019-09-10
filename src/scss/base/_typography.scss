@@ -1,14 +1,14 @@
 .heading--primary{
     text-align: center;
-    font-size: $size-xs*3;
+    font-size: $font-size-xs*3;
+    font-weight: 400;
     color: $color-primary;
     margin-bottom: $space-s*2; 
-    font-weight: 400;
 }
 
     @include respond(tab-port) {
        .heading--primary {
-           font-size: $size-xs*4;
+           font-size: $font-size-xs*4;
            margin-bottom: $space-m*2;
        }
 
@@ -16,7 +16,7 @@
 
 .heading--secondary {
     text-align: center;
-    font-size: $size-xs*3;
+    font-size: $font-size-xs*3;
     color: $color-grey-dark;
     text-transform: uppercase;
 
@@ -26,20 +26,20 @@
 }
 
 .heading--tertiary {
-    margin-bottom: 1rem;
-    color: $color-grey-dark;
-    font-size: $size-l;
+    font-size: $font-size-l;
     font-weight: 700;
+    color: $color-grey-dark;
+    margin-bottom: 1rem;
 
     &--light {
-        color: $color-grey-light;
         display: inline-block;
+        color: $color-grey-light;
         margin-left: $space-s;
     }
 
     &--dark {
-        color: $color-grey-dark;
         display: inline-block;
+        color: $color-grey-dark;
         margin-left: $space-s;
     }
 
@@ -50,9 +50,9 @@
 }
 
 .heading--fourth {
-    margin-bottom: 1rem;
+    font-size: $font-size-xs*2;
     color: $color-grey-dark;
-    font-size: $size-xs*2;
+    margin-bottom: $space-s/2;
 
     &--uppercase {
         text-transform: uppercase;
@@ -61,15 +61,13 @@
     &--white {
         color: $color-white;
     }
-
-
 }
 
 .paragraph {
-    font-size: $size-m;
-    margin-bottom: 2rem;
+    font-size: $font-size-m;
     color: $color-grey-dark;
     line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .paragraph--cta {
@@ -83,9 +81,9 @@
 }
 
 .paragraph--orange {
-    color: $color-secondary;
-    padding: .5rem 0;
     text-align: center;
+    color: $color-secondary;
+    padding: .5rem 0; 
 }
 
 .paragraph--contact {
@@ -93,23 +91,22 @@
 }
 
 .paragraph--copyright {
+    font-size: $font-size-s;
     color: $color-white;
     padding: 2rem 0;
-    font-size: $size-s;
 }
 
 .paragraph--register {
-    font-size: $size-xs*2;
+    font-size: $font-size-xs*2;
     font-weight: 700;
     margin-bottom: 4rem;;
     margin-top: 4rem;
 }
 
-
 @include respond(tab-land) {
     .heading--tertiary {
         &--thin {
-           font-size: $size-xs*3;
+           font-size: $font-size-xs*3;
         }
     }
 }

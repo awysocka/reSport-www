@@ -14,17 +14,16 @@
         max-width: 20rem;
         width: 60%;
         margin: $space-s auto;
-        
     }
 
     .button-cta {
-        padding: .8rem $space-s;
+        font-size: $font-size-m; 
+        color: $color-white;
         display: block;
         background-color: $color-secondary;
         border: 1px solid $color-secondary;
-        color: $color-white;
         border-radius: 5px;
-        font-size:$size-m; 
+        padding: .8rem $space-s;
     }
 
     .container {
@@ -40,22 +39,22 @@
     }
 
     .header .button-cta {
-        font-size: $size-l;
+        font-size: $font-size-l;
     }
-
 }
 
 @include respond(tab-land) {
-
-    .header .button-cta {
-        display: none;
-    }
-
     @supports (display:grid) {
+
+        .header .button-cta {
+            display: none;
+        }
+
         .header {
             min-height: 650px;
             display: grid;
             justify-content: center;
+            align-items: end;
             grid-template-rows: 7rem 1fr 1fr;
 
             .heading--primary {
@@ -72,13 +71,13 @@
             width: 20%;
         }
         .header .container {
+            max-width: $max-width-grid;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: $space-s;
             grid-row-start: 3;
             justify-content: center;
-            max-width: 1080px;
-            padding: $space-s;
+            padding: $space-s*2 $space-s;
 
 
             &__box {
@@ -96,34 +95,19 @@
                 border-radius: $radius-s;
 
                 .box--icon {
-                    font-size: $size-xs*4;
-                    color: $color-primary;
-                    vertical-align: middle;
-                    margin-bottom: $space-s;
+                    @include header__icon($color-primary);
                 }
             }
 
             .box--2 {
-                background-color: rgba($color-primary, .7) ;
+                background-color: rgba($color-primary, .8) ;
                 border-radius: $radius-s;
 
                 .box--icon {
-                    font-size: $size-xs*4;
-                    color: $color-grey-light;
-                    vertical-align: middle;
-                    margin-bottom: $space-s;
+                    @include header__icon($color-grey-light);
                 }
             }
         }
-    }
-
-    
-    
-
+    } 
 }
-
-
-
-
-
 

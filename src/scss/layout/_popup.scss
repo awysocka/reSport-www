@@ -18,12 +18,12 @@
 .popup__box {
     width: 90%;
     height: 90%;
-    background-color: $color-white;
-    padding: $space-s*2 $space-m;
     text-align: center;
+    background-color: $color-white;
     border-radius: $radius-s;
     overflow: auto;
     position: relative;
+    padding: $space-s*2 $space-m;
     margin-top: 0;
     margin-right: 0;
 }
@@ -32,7 +32,7 @@
     position: absolute;
     top: calc(5% + 1rem);
     right: calc(5% + 3rem);
-    font-size: $size-xs*3;
+    font-size: $font-size-xs*3;
     color: $color-grey-dark;
     transition: color .3s ease;
     z-index: $z-index-popup;

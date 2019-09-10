@@ -5,6 +5,24 @@
     position: absolute;
 }
 
+@mixin img__personal($url) {
+    width: 25rem;
+    height: 25rem;
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border-radius: 50%;
+    margin: $space-s auto; 
+}
+
+@mixin header__icon($color) {
+    font-size: $font-size-xs*4;
+    color: $color;
+    vertical-align: middle;
+    margin-bottom: $space-s;
+}
+
 //MEDIA QUERIES
 
 @mixin respond($breakpoints) {
