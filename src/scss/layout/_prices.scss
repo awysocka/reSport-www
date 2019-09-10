@@ -20,3 +20,35 @@
     }
 }
 
+@include respond(tab-land) {
+    @supports (display:grid) {
+
+        .prices {
+            max-width: 1080px;
+            padding: $space-m*2 $space-s;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 4rem 2rem;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-template-rows: 7rem repeat(2, minmax(210px, 1fr));
+
+            .paragraph {
+                grid-column-start: span 3;
+            }
+
+            &__box {
+                min-height: 210px;
+                margin: 0;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                
+            }
+
+        }
+    }
+}
+

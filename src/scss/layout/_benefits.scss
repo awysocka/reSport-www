@@ -21,7 +21,7 @@
 @include respond(tab-land) {
     @supports (display:grid) {
 
-            .container {
+            .container__benefits {
                 margin: 0 auto;
                 max-width: 1080px;
                 display: grid;
@@ -33,6 +33,8 @@
             }
 
             .benefits {
+                padding: $space-m*2 $space-s;
+                
                 &__box:not(:last-child) {
                     margin: 0;
                 }
