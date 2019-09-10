@@ -9,3 +9,22 @@
         }
     }
 }
+
+@include respond(tab-land) {
+    @supports (display:grid) {
+
+        .gallery {
+            max-width: 1080px;
+            padding: $space-s;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: $space-s*2 $space-s;
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-template-rows: 7rem minmax(210px, 1fr);
+
+            .lokal__photo {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -23,18 +23,19 @@
 
             .container__benefits {
                 margin: 0 auto;
+                padding: $space-s;
                 max-width: 1080px;
                 display: grid;
                 justify-content: center;
                 align-items: baseline;
-                grid-gap: 4rem 2rem;
+                grid-gap: $space-s*2 $space-s;
                 grid-template-columns: repeat(3, minmax(300px, 1fr));
                 grid-template-rows: 7rem 1fr;
             }
 
             .benefits {
                 padding: $space-m*2 $space-s;
-                
+
                 &__box:not(:last-child) {
                     margin: 0;
                 }

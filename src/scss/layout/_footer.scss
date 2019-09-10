@@ -83,3 +83,40 @@
         border-bottom: .5px solid $color-white;
     }
 }
+
+
+@include respond(tab-land) {
+    @supports (display:grid) {
+
+        .footer {
+            padding: 0;
+        }
+        
+        .container__footer {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: $space-m*2 $space-s  $space-s;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 7rem 1fr 10rem;
+
+            h2 {
+                grid-column-start: span 2;
+                text-align: start;
+            }
+
+            .copyright {
+                grid-column-start: span 2;
+                grid-row-start: 3;
+            }
+
+        }
+
+        .contact {
+
+            &__info {
+                padding: 0;
+            }
+        }
+    }
+}
