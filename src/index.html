@@ -17,7 +17,9 @@
     <!-- Open Graph tags end -->
     <title>ReSport - fizjoterapia</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="vendor/fslightbox-basic-2.0.1/fslightbox.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <script src="https://kit.fontawesome.com/56980f51a1.js"></script>
 </head>
 <body>
@@ -194,19 +196,25 @@
         <div class="gallery">
             <h2 class="heading--secondary">Nasze centrum</h2>
             <figure class="lokal__photo">
-                <img srcset="img/lokal_photo_1_mobile.jpg,
+                <a data-fslightbox="interior_photos" href="img/lokal_photo_1.jpg">
+                    <img srcset="img/lokal_photo_1_mobile.jpg,
                             img/lokal_photo_1.jpg 2x"
                      src="img/lokal_photo_1_mobile.jpg" alt="wnętrze lokalu rejestracja">
+                </a>
             </figure>
             <figure class="lokal__photo">
-                <img srcset="img/lokal_photo_2_mobile.jpg,
-                            img/lokal_photo_2.jpg 2x"
-                     src="img/lokal_photo_2_mobile.jpg" alt="wnętrze gabinetu">
+                <a data-fslightbox="interior_photos" href="img/lokal_photo_2.jpg">
+                    <img srcset="img/lokal_photo_2_mobile.jpg,
+                        img/lokal_photo_2.jpg 2x"
+                    src="img/lokal_photo_2_mobile.jpg" alt="wnętrze gabinetu">
+                </a>
             </figure>
             <figure class="lokal__photo">
-                <img srcset="img/lokal_photo_3_mobile.jpg,
-                             img/lokal_photo_3.jpg 2x"
-                     src="img/lokal_photo_3_mobile.jpg" alt="wnętrze gabinetu">
+                <a data-fslightbox="interior_photos" href="img/lokal_photo_3.jpg">
+                    <img srcset="img/lokal_photo_3_mobile.jpg,
+                            img/lokal_photo_3.jpg 2x"
+                    src="img/lokal_photo_3_mobile.jpg" alt="wnętrze gabinetu">
+                </a>
             </figure>
         </div>
     </main>
@@ -333,5 +341,6 @@
 
 
 <script src="js/script.js"></script>
+<script src="vendor/fslightbox-basic-2.0.1/fslightbox.min.js"></script>
 </body>
 </html> 

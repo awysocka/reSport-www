@@ -70,9 +70,4 @@ for(let popupBox of popupBoxes) {
 // NAV
 // Changing nav-bar color after scrolling
 
-  // const fromTop = window.pageYOffset;
-  //  document.getElementById("nav").style.backgroundColor = "rgb(" +
-  //   parseInt(fromTop/5, 10) + ',' +
-  //   parseInt(fromTop/2, 10) + ',' +
-  //   parseInt(fromTop/3, 10) + ")";
-  //   });
+ 
