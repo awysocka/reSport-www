@@ -30,11 +30,12 @@
             grid-template-columns: repeat(3, minmax(300px, 1fr));
             grid-template-rows: 7rem 1fr;
             margin: 0 auto;
-            padding: $space-s;
+            padding: 0 $space-s;
         }
 
         .benefits {
             padding: $space-m*2 $space-s;
+            margin: 0;
 
             &__box:not(:last-child) {
                 margin: 0;

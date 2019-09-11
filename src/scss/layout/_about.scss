@@ -9,24 +9,38 @@
     &__img {
 
         &--item1 {
-            @include img__personal(url(../../img/profile_img_ania.jpg));
+            @include img__personal(url(../../img/profile_img_ania_mobile.jpg));
         }
 
         &--item2 {
-            @include img__personal(url(../../img/profile_img_radek.jpg));
+            @include img__personal(url(../../img/profile_img_radoslaw_mobile.jpg));
         }
     }
- 
 }
 
+
 @include respond(tab-land) {
+
+    .about {
+        &__img {
+
+            &--item1 {
+                @include img__personal(url(../../img/profile_img_ania.jpg));
+            }
+    
+            &--item2 {
+                @include img__personal(url(../../img/profile_img_radoslaw.jpg));
+            }
+        }
+    }
+
     @supports (display:grid) {
 
         .about {
             max-width: $max-width-grid;
             display: grid;
             grid-gap: $space-s*2 $space-s;
-            align-items: center;
+            align-items: start;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 7rem 1fr;
             padding: $space-m*2 $space-s;
