@@ -9,35 +9,49 @@
     align-items: center;
     display: none;
 
+    &--active {
+        display: flex;
+    }
+    
+    &__box {
+        width: 90%;
+        height: 90%;
+        text-align: center;
+        background-color: $color-white;
+        border-radius: $radius-s;
+        overflow: auto;
+        position: relative;
+        padding: $space-s*2 $space-m;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    
+    &__close {
+        position: absolute;
+        top: calc(5% + 1rem);
+        right: calc(5% + 3rem);
+        font-size: $font-size-xs*3;
+        color: $color-grey-dark;
+        transition: color .3s ease;
+        z-index: $z-index-popup;
+    
+        &:hover {
+            color: $color-secondary;
+        }
+    }
 }
 
-.popup--active {
-    display: flex;
-}
+@include respond(tab-land) {
 
-.popup__box {
-    width: 90%;
-    height: 90%;
-    text-align: center;
-    background-color: $color-white;
-    border-radius: $radius-s;
-    overflow: auto;
-    position: relative;
-    padding: $space-s*2 $space-m;
-    margin-top: 0;
-    margin-right: 0;
-}
-
-.popup__close{
-    position: absolute;
-    top: calc(5% + 1rem);
-    right: calc(5% + 3rem);
-    font-size: $font-size-xs*3;
-    color: $color-grey-dark;
-    transition: color .3s ease;
-    z-index: $z-index-popup;
-
-    &:hover {
-        color: $color-secondary;
+    .popup {
+        &__box {
+            width: 60%;
+            height: 70%;
+        }
+    
+        &__close {
+            top: calc(15% + 1rem);
+            right: calc(20% + 3rem);
+        }      
     }
 }
