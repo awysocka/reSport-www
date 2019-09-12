@@ -70,4 +70,12 @@ for(let popupBox of popupBoxes) {
 // NAV
 // Changing nav-bar color after scrolling
 
- 
+window.onscroll = function() {
+  const scrolled = window.scrollY;
+
+  if(scrolled >= 70) {
+    nav.classList.add("nav--colored");
+  } else {
+    nav.classList.remove("nav--colored");
+  }
+};
