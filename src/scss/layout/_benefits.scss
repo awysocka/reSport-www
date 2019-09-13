@@ -21,21 +21,21 @@
 @include respond(tab-land) {
     @supports (display:grid) {
 
-        .container__benefits {
-            max-width: $max-width-grid;
-            display: grid;
-            justify-content: center;
-            align-items: baseline;
-            grid-gap: $space-s*2 $space-s;
-            grid-template-columns: repeat(3, minmax(300px, 1fr));
-            grid-template-rows: 7rem 1fr;
-            margin: 0 auto;
-            padding: 0 $space-s;
-        }
-
         .benefits {
             padding: $space-m*2 $space-s;
             margin: 0;
+
+            &__container {
+                max-width: $max-width-grid;
+                display: grid;
+                justify-content: center;
+                align-items: baseline;
+                grid-gap: $space-s*2 $space-s;
+                grid-template-columns: repeat(3, minmax(300px, 1fr));
+                grid-template-rows: 7rem 1fr;
+                margin: 0 auto;
+                padding: 0 $space-s;
+            }
 
             &__box:not(:last-child) {
                 margin: 0;
@@ -44,39 +44,36 @@
             &__box--item1 {
                 grid-column-start: 1;
                 grid-row: 2/3;
-                @include fade_in(translateY(30%));
+                @include fadeIn(translateY(30%));
 
                 &.slide {
-                    transform: translateY(0);
-                    opacity: 1;
+                    @include benefitsSlideIn;
                 }
             }
 
             &__box--item2 {
                 grid-column-start: 2;
                 grid-row: 2/3;
-                @include fade_in(translateY(30%));
+                @include fadeIn(translateY(30%));
 
                 &.slide {
-                    transform: translateY(0);
-                    opacity: 1;
+                    @include benefitsSlideIn;
                 }
             }
 
             &__box--item3 {
                 grid-column-start: 3;
                 grid-row: 2/3;
-                @include fade_in(translateY(30%));
+                @include fadeIn(translateY(30%));
 
                 &.slide {
-                    transform: translateY(0);
-                    opacity: 1;
+                    @include benefitsSlideIn;
                 }
             }
-        }
 
-        h2 {
-            grid-column-start: span 3;
-        }
+            h2 {
+                grid-column-start: span 3;
+            }
+        }  
     }
 }

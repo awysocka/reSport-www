@@ -31,24 +31,25 @@
     }
 }
 
+
 @include respond(tab-port) {
 
-    .header img {
-        max-width: 40rem;
-        width: 70%;
-    }
+    .header{
 
-    .header .button--cta {
-        font-size: $font-size-l;
+        img {
+            max-width: 40rem;
+            width: 70%;
+        } 
+
+        .button--cta {
+            font-size: $font-size-l;
+        }
     }
 }
 
+
 @include respond(tab-land) {
     @supports (display:grid) {
-
-        .header .button--cta {
-            display: none;
-        }
 
         .header {
             background-image: url(../img/header_img.jpg);
@@ -58,53 +59,62 @@
             align-items: end;
             grid-template-rows: 7rem 1fr 1fr;
 
-            .heading--primary {
+            h1 {
                 margin-bottom: 1rem;
             }
-        }
 
-        .logotyp {
-            grid-row-start: 2;
-        }
-
-        .header img {
-            max-width: 30rem;
-            width: 20%;
-        }
-        .header .container {
-            max-width: $max-width-grid;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $space-s;
-            grid-row-start: 3;
-            justify-content: center;
-            padding: $space-s*2 $space-s;
-
-            &__box {
-                max-height: 220px;
-                padding: $space-s;
-
-                .paragraph {
-                    display: flex;
-                    justify-content: space-between;
-                }
+            .button--cta {
+                display: none;
             }
 
-            &__box--1, &__box--3 {
-                background-color: rgba($color-white, .9);
-                border-radius: $radius-s;
-
-                .box--icon {
-                    @include header__icon($color-primary);
-                }
+            img {
+                max-width: 30rem;
+                width: 20%;
             }
 
-            &__box--2 {
-                background-color: rgba($color-primary, .9) ;
-                border-radius: $radius-s;
+            .logotyp {
+                grid-row-start: 2;
+            }
 
-                .box--icon {
-                    @include header__icon($color-grey-light);
+            .container {
+                max-width: $max-width-grid;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: $space-s;
+                grid-row-start: 3;
+                justify-content: center;
+                padding: $space-s*2 $space-s;
+    
+                &__box {
+                    max-height: 220px;
+                    padding: $space-s;
+    
+                    .paragraph:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    .paragraph {
+                        display: flex;
+                        justify-content: space-between;   
+                    }
+                }
+    
+                &__box--1, &__box--3 {
+                    background-color: rgba($color-white, .9);
+                    border-radius: $radius-s;
+    
+                    .box--icon {
+                        @include header__icon($color-primary);
+                    }
+                }
+    
+                &__box--2 {
+                    background-color: rgba($color-primary, .9) ;
+                    border-radius: $radius-s;
+    
+                    .box--icon {
+                        @include header__icon($color-grey-light);
+                    }
                 }
             }
         }

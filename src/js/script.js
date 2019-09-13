@@ -67,7 +67,7 @@ for(let popupBox of popupBoxes) {
   };
 }
 
-// Changes nav-bar color on scroll
+// Changes nav-bar color on scroll + add logo to nav on scroll
 
 function updateNavOnScroll() {
   const scrolled = window.scrollY;
