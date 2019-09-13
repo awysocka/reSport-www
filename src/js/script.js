@@ -71,11 +71,14 @@ for(let popupBox of popupBoxes) {
 
 function updateNavOnScroll() {
   const scrolled = window.scrollY;
+  const navLogo = document.getElementById("nav-logo");
 
   if(scrolled >= 70) {
     nav.classList.add("nav--colored");
+    navLogo.classList.add("nav__logo--visible");
   } else {
     nav.classList.remove("nav--colored");
+    navLogo.classList.remove("nav__logo--visible");
   }
 }
 

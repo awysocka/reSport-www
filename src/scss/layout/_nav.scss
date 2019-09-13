@@ -39,20 +39,34 @@
 }
 
 
+.nav__logo {
+    display: none;
+}
+
+
 @include respond(tab-land) {
     @supports (display:grid) {
         
         .nav {
             background-color: transparent;
-            height: 6rem;
+            height: 7rem;
             width: 100vw;
             transform: translateX(0);
             transition: all .5s ease;
+            display: flex;
+            align-items: baseline;
+
+            &__container {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                max-width: $max-width-grid;
+            }
             
             &__list {
                 display: flex;
                 justify-content: center;
-                margin: 0; 
+                margin: 0 auto;
             }
 
             .nav__link {
@@ -68,6 +82,19 @@
         .nav--colored {
             background-color: rgba($color-white, .98);
             box-shadow: 0px 2px 2px -1px rgba(102,102,102,.5);
+        }
+
+        .nav__logo {
+            display: none;
+            width: 7rem;
+            opacity: 0;
+            transition: opacity 3s  ease;
+        }
+
+        .nav__logo--visible {
+            display: flex;
+            margin-top: 1.6rem;
+            opacity: 1;
         }
     }
 }
