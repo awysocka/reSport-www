@@ -25,10 +25,11 @@
 
             .lokal__photo {
                 margin: 0;
-                transition: all .3s ease;
+                @include fade_in(translateY(30%));
 
-                &:hover {
-                    transform: scale(1.05);
+                &.slide {
+                    transform: translateY(0);
+                    opacity: 1;
                 }
             }
         }

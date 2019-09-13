@@ -67,10 +67,9 @@ for(let popupBox of popupBoxes) {
   };
 }
 
-// NAV
-// Changing nav-bar color after scrolling
+// Changes nav-bar color on scroll
 
-window.onscroll = function() {
+function updateNavOnScroll() {
   const scrolled = window.scrollY;
 
   if(scrolled >= 70) {
@@ -78,4 +77,31 @@ window.onscroll = function() {
   } else {
     nav.classList.remove("nav--colored");
   }
+}
+
+// Slide elements in on scroll
+
+function slideElementOnScroll(slidableElement) {
+  const scrolled = window.scrollY;
+  const slidableElementMiddle = slidableElement.offsetTop;
+  const scrolledBottom = (scrolled + window.innerHeight) - slidableElement.offsetHeight / 2;
+  
+  if(scrolledBottom >= slidableElementMiddle) {
+    slidableElement.classList.add("slide");
+  } 
+  else {
+    slidableElement.classList.remove("slide");
+  }
+}
+
+window.onscroll = function() {
+  updateNavOnScroll();
+
+  const slidableElements = document.querySelectorAll(".slidable");
+
+  slidableElements.forEach(function(slidableElement) {
+    slideElementOnScroll(slidableElement);
+  });
 };
+
+

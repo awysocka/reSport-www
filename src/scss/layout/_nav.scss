@@ -47,7 +47,7 @@
             height: 6rem;
             width: 100vw;
             transform: translateX(0);
-            transition: all .2s ease;
+            transition: all .5s ease;
             
             &__list {
                 display: flex;
@@ -57,18 +57,16 @@
 
             .nav__link {
                 color: $color-grey-dark;
-                transition: all .2s ease-in-out;
+                transition: all .2s .1s ease-in-out;
             
                 &:hover {
                     color: $color-secondary;
                 }
-            
             }
-    
         }
 
         .nav--colored {
-            background-color: $color-white;
+            background-color: rgba($color-white, .98);
             box-shadow: 0px 2px 2px -1px rgba(102,102,102,.5);
         }
     }

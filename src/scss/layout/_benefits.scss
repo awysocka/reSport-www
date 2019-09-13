@@ -43,14 +43,35 @@
             
             &__box--item1 {
                 grid-column-start: 1;
+                grid-row: 2/3;
+                @include fade_in(translateY(30%));
+
+                &.slide {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
 
             &__box--item2 {
                 grid-column-start: 2;
+                grid-row: 2/3;
+                @include fade_in(translateY(30%));
+
+                &.slide {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
 
             &__box--item3 {
                 grid-column-start: 3;
+                grid-row: 2/3;
+                @include fade_in(translateY(30%));
+
+                &.slide {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
         }
 

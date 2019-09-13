@@ -16,7 +16,7 @@
         margin: $space-s auto;
     }
 
-    .button-cta {
+    .button--cta {
         font-size: $font-size-m; 
         color: $color-white;
         display: block;
@@ -38,7 +38,7 @@
         width: 70%;
     }
 
-    .header .button-cta {
+    .header .button--cta {
         font-size: $font-size-l;
     }
 }
@@ -46,7 +46,7 @@
 @include respond(tab-land) {
     @supports (display:grid) {
 
-        .header .button-cta {
+        .header .button--cta {
             display: none;
         }
 
@@ -80,7 +80,6 @@
             justify-content: center;
             padding: $space-s*2 $space-s;
 
-
             &__box {
                 max-height: 220px;
                 padding: $space-s;
@@ -91,8 +90,8 @@
                 }
             }
 
-            .box--1, .box--3 {
-                background-color: rgba($color-white, .8);
+            &__box--1, &__box--3 {
+                background-color: rgba($color-white, .9);
                 border-radius: $radius-s;
 
                 .box--icon {
@@ -100,8 +99,8 @@
                 }
             }
 
-            .box--2 {
-                background-color: rgba($color-primary, .8) ;
+            &__box--2 {
+                background-color: rgba($color-primary, .9) ;
                 border-radius: $radius-s;
 
                 .box--icon {
