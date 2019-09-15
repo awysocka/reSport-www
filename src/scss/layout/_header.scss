@@ -1,4 +1,3 @@
-
 .header {
     height: 100vh;
     background-image: url(../img/header_img_mobile.jpg);
@@ -17,7 +16,7 @@
     }
 
     .button--cta {
-        font-size: $font-size-m; 
+        font-size: $font-size-m;
         color: $color-white;
         display: block;
         background-color: $color-secondary;
@@ -31,22 +30,20 @@
     }
 }
 
-
 @include respond(tab-port) {
 
-    .header{
+    .header {
 
         img {
-            max-width: 40rem;
+            max-width: 20rem;
             width: 70%;
-        } 
+        }
 
         .button--cta {
             font-size: $font-size-l;
         }
     }
 }
-
 
 @include respond(tab-land) {
     @supports (display:grid) {
@@ -68,8 +65,8 @@
             }
 
             img {
-                max-width: 30rem;
-                width: 20%;
+                max-width: 20rem;
+                width: 25%;
             }
 
             .logotyp {
@@ -84,40 +81,54 @@
                 grid-row-start: 3;
                 justify-content: center;
                 padding: $space-s*2 $space-s;
-    
+
                 &__box {
                     max-height: 220px;
                     padding: $space-s;
-    
+
                     .paragraph:last-child {
                         margin-bottom: 0;
                     }
-    
+
                     .paragraph {
                         display: flex;
-                        justify-content: space-between;   
+                        justify-content: space-between;
                     }
                 }
-    
-                &__box--1, &__box--3 {
+
+                &__box--1,
+                &__box--3 {
                     background-color: rgba($color-white, .9);
                     border-radius: $radius-s;
-    
+
                     .box--icon {
                         @include header__icon($color-primary);
                     }
                 }
-    
+
                 &__box--2 {
-                    background-color: rgba($color-primary, .9) ;
+                    background-color: rgba($color-primary, .9);
                     border-radius: $radius-s;
-    
+
                     .box--icon {
                         @include header__icon($color-grey-light);
                     }
                 }
             }
         }
-    } 
+    }
 }
 
+@include respond(desktop) {
+    .header {
+
+        img {
+            max-width: 35rem;
+            width: 30%;
+        }
+
+        h1 {
+            font-size: $font-size-xs*4;
+        }
+    }
+}

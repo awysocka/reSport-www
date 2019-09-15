@@ -1,9 +1,8 @@
 .divider {
     text-align: center;
     background-color: $color-primary;
-    margin-top: $space-s*2 ;
     padding: $space-m*2 $space-s;
-    
+
     .link--cta {
         font-size: $font-size-xs*2;
         font-weight: 300;
@@ -18,4 +17,3 @@
         }
     }
 }
-

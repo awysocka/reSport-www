@@ -1,4 +1,3 @@
-
 .prices {
     padding-top: $space-s*2;
 
@@ -6,7 +5,7 @@
         min-height: 10rem;
         text-align: center;
         background-color: $color-grey-light;
-        border-radius: 4px; 
+        border-radius: 4px;
         padding: $space-m;
         margin: $space-s*2 $space-s 0 $space-s;
     }
@@ -19,12 +18,37 @@
     }
 }
 
-
 @include respond(tab-port) {
+    @supports (display:grid) {
 
-    .prices {
-        padding: $space-m*2 $space-s;
-    }  
+        .prices {
+            display: grid;
+            grid-gap: $space-s;
+            justify-content: center;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            padding: $space-m*2 $space-s;
+    
+            h2 {
+                grid-column-start: span 2;
+            }
+    
+            .paragraph {
+                grid-column-start: span 2;
+            }
+    
+            span {
+                margin-bottom: 0;
+            }
+    
+            &__box {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }   
 }
 
 @include respond(tab-land) {
@@ -33,7 +57,8 @@
         .prices {
             max-width: $max-width-grid;
             display: grid;
-            grid-gap: $space-s*2 $space-s;
+            justify-content: center;
+            grid-gap: $space-s;
             grid-template-columns: repeat(3, minmax(300px, 1fr));
             grid-template-rows: 7rem repeat(2, minmax(210px, 1fr));
             padding: $space-m*2 $space-s;
@@ -43,8 +68,12 @@
                 grid-column-start: span 3;
             }
 
+            span {
+                margin-bottom: 0;
+            }
+
             h2 {
-                grid-column-start: span 3; 
+                grid-column-start: span 3;
             }
 
 
@@ -55,9 +84,8 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center; 
+                justify-content: center;
             }
         }
     }
 }
-

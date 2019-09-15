@@ -3,19 +3,18 @@
 
     .lokal__photo {
         margin: $space-s*2 $space-s 0 $space-s;
-        
+
         img {
             border-radius: $radius-s;
         }
     }
 }
 
-
 @include respond(tab-port) {
     @supports (display:grid) {
-        
+
         .gallery {
-            @include gallery(repeat(3, minmax(100px, 1fr)));
+            @include gallery(repeat(3, minmax(100px, 1fr)), 7rem 1fr);
 
             h2 {
                 grid-column-start: span 3;
@@ -28,12 +27,11 @@
     }
 }
 
-
 @include respond(tab-land) {
     @supports (display:grid) {
 
         .gallery {
-            @include gallery(repeat(3, minmax(300px, 1fr)));
+            @include gallery(repeat(3, minmax(300px, 1fr)), 7rem 1fr);
 
             h2 {
                 grid-column-start: span 3;

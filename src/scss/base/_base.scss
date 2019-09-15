@@ -13,11 +13,10 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif; 
-    background-color: $color-white;  
+    font-family: 'Lato', sans-serif;
+    background-color: $color-white;
     overflow-x: hidden;
 }
-
 
 .wrapper {
     min-width: 37rem;
@@ -59,7 +58,3 @@ a {
         border-bottom: .5px solid $color-secondary;
     }
 }
-
-
-
-

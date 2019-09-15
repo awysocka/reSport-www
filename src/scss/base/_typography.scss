@@ -1,18 +1,18 @@
-.heading--primary{
+.heading--primary {
     text-align: center;
     font-size: $font-size-xs*3;
     font-weight: 400;
     color: $color-primary;
-    margin-bottom: $space-s*2; 
+    margin-bottom: $space-s*2;
 }
 
-    @include respond(tab-port) {
-       .heading--primary {
-           font-size: $font-size-xs*4;
-           margin-bottom: $space-m*2;
-       }
-
+@include respond(tab-port) {
+    .heading--primary {
+        font-size: $font-size-xs*4;
+        margin-bottom: $space-m*2;
     }
+
+}
 
 .heading--secondary {
     text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .heading--tertiary {
-    font-size: $font-size-l;
+    font-size: 2.2rem;
     font-weight: 700;
     color: $color-grey-dark;
     margin-bottom: 1rem;
@@ -83,7 +83,8 @@
 .paragraph--orange {
     text-align: center;
     color: $color-secondary;
-    padding: .5rem 0; 
+    padding: .5rem 0;
+    margin-bottom: 0;
 }
 
 .paragraph--contact {
@@ -99,14 +100,15 @@
 .paragraph--register {
     font-size: $font-size-xs*2;
     font-weight: 700;
-    margin-bottom: 4rem;;
+    margin-bottom: 4rem;
+    ;
     margin-top: 4rem;
 }
 
 @include respond(tab-land) {
     .heading--tertiary {
         &--thin {
-           font-size: $font-size-xs*3;
+            font-size: $font-size-xs*3;
         }
     }
 }

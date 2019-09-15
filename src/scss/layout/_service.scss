@@ -1,14 +1,13 @@
 .service {
     padding-top: $space-s*2;
-  
+
     .heading_fourth:not(:last-child) {
         color: $color-grey-dark;
-        font-size: $font-size-xs*2; 
-        margin-bottom: 1rem;   
+        font-size: $font-size-xs*2;
+        margin-bottom: 1rem;
     }
 
     &__box {
-        min-height: 25rem;
         background-color: $color-grey-light;
         border-radius: $radius-s;
         padding: $space-m;
@@ -20,12 +19,11 @@
         color: $color-grey-dark;
         line-height: 1.6;
     }
-    
+
     &__pictures {
         display: none;
-    }  
+    }
 }
-
 
 @include respond(tab-land) {
     @supports (display:grid) {
@@ -33,7 +31,7 @@
         .service {
             max-width: $max-width-grid;
             display: grid;
-            grid-gap: 4rem 2rem;
+            grid-gap: $space-s;
             justify-content: center;
             align-items: start;
             grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -45,7 +43,7 @@
                 height: 33rem;
                 min-height: 33rem;
                 min-width: 30rem;
-                padding: $space-m $space-s*2; 
+                padding: $space-m $space-s*2;
                 margin: 0;
             }
 
@@ -57,7 +55,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: $radius-s;
-                
+
                 &--player {
                     background-color: $color-primary;
                     font-size: $font-size-l*5;
@@ -66,23 +64,23 @@
 
                     .fas {
                         transform: scaleX(-1);
-                    }   
-                } 
+                    }
+                }
 
                 &.slide {
-                    transform: translateX(0px) scale(1); 
+                    transform: translateX(0px) scale(1);
                     opacity: 1;
                 }
-        
+
                 &--women {
                     background-color: $color-secondary;
                     font-size: $font-size-l*5;
                     color: $color-white;
-                    @include fadeIn(translateX(-30%)); 
+                    @include fadeIn(translateX(-30%));
                 }
 
                 &.slide {
-                    transform: translateX(0px) scale(1); 
+                    transform: translateX(0px) scale(1);
                     opacity: 1;
                 }
             }
@@ -114,8 +112,8 @@
 
                 &--women {
                     grid-row-start: 3;
-                    grid-column: 1;    
-                }  
+                    grid-column: 1;
+                }
             }
 
             &__box--3 {
@@ -127,6 +125,6 @@
                 grid-row-start: 3;
                 grid-column: 3;
             }
-        }   
+        }
     }
 }

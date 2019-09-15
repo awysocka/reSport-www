@@ -8,27 +8,31 @@
 
     &__img {
 
-        &--item1 {
+        &--anna {
             @include img__personal(url(../../img/profile_img_ania_mobile.jpg));
         }
 
-        &--item2 {
+        &--radoslaw {
             @include img__personal(url(../../img/profile_img_radoslaw_mobile.jpg));
         }
     }
-}
 
+    .paragraph {
+        max-width: 45rem;
+        margin: $space-s auto;
+    }
+}
 
 @include respond(tab-land) {
 
     .about {
         &__img {
 
-            &--item1 {
+            &--anna {
                 @include img__personal(url(../../img/profile_img_ania.jpg));
             }
-    
-            &--item2 {
+
+            &--radoslaw {
                 @include img__personal(url(../../img/profile_img_radoslaw.jpg));
             }
         }
@@ -39,7 +43,7 @@
         .about {
             max-width: $max-width-grid;
             display: grid;
-            grid-gap: $space-s*2 $space-s;
+            grid-gap: $space-s;
             align-items: start;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 7rem 1fr;
@@ -48,13 +52,12 @@
 
             &__box {
                 max-width: 30rem;
-                margin: 0 auto;  
+                margin: 0 auto;
             }
 
             h2 {
                 grid-column-start: span 2;
             }
-        }   
+        }
     }
 }
-

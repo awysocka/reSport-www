@@ -1,23 +1,24 @@
-// // ---HAMBURGER MENU---
+
+// ---MOBILE MENU---
 
 const hamburgerIcon = document.getElementById("hamburger");
 const nav = document.getElementById('nav');
 const navLinks = document.getElementsByClassName("nav__item");
 
-// open and close menu after 'click' on hamburger
-hamburgerIcon.onclick = function() {
+// open and close mobile menu after 'click' on hamburger
+hamburgerIcon.onclick = function () {
   hamburgerIcon.classList.toggle("hamburger--active");
   nav.classList.toggle("nav--active");
 };
 
-// close rwd menu after 'click' link
-const closeMenu = function() {
+// close mobile menu after 'click' on menu link
+const closeMenu = function () {
   hamburgerIcon.classList.remove("hamburger--active");
   nav.classList.remove("nav--active");
 };
 
-for(let navLink of navLinks) {
-    navLink.onclick = closeMenu;
+for (let navLink of navLinks) {
+  navLink.onclick = closeMenu;
 }
 
 
@@ -30,50 +31,54 @@ const popupRadoslaw = document.getElementById("popup-radoslaw");
 const popupCloses = document.getElementsByClassName("popup__close");
 const popups = document.getElementsByClassName("popup");
 const popupBoxes = document.getElementsByClassName("popup__box");
-const deactivatePopup = function(event) {
+const deactivatePopup = function (event) {
   document.getElementsByClassName("popup--active")[0].classList.remove("popup--active");
   event.preventDefault();
 };
 
 // open popups
 
-moreAnna.onclick = function(event) {
+moreAnna.onclick = function (event) {
   popupAnna.classList.add("popup--active");
   event.preventDefault();
 };
 
-moreRadoslaw.onclick = function(event) {
+moreRadoslaw.onclick = function (event) {
   popupRadoslaw.classList.add("popup--active");
   event.preventDefault();
 };
 
 // close popup: on x
 
-for(let popupClose of popupCloses) {
+for (let popupClose of popupCloses) {
   popupClose.onclick = deactivatePopup;
 }
 
 // close popup: on outside click
 
-for(let popup of popups) {
+for (let popup of popups) {
   popup.onclick = deactivatePopup;
 }
 
 // prevent close popup on popup content click
 
-for(let popupBox of popupBoxes) {
-  popupBox.onclick = function(event) {
+for (let popupBox of popupBoxes) {
+  popupBox.onclick = function (event) {
     event.stopPropagation();
   };
 }
 
+
+// ---DESKTOP MENU---
+
 // Changes nav-bar color on scroll + add logo to nav on scroll
+
+const navLogo = document.getElementById("nav-logo");
 
 function updateNavOnScroll() {
   const scrolled = window.scrollY;
-  const navLogo = document.getElementById("nav-logo");
-
-  if(scrolled >= 70) {
+  
+  if (scrolled >= 70) {
     nav.classList.add("nav--colored");
     navLogo.classList.add("nav__logo--visible");
   } else {
@@ -82,29 +87,29 @@ function updateNavOnScroll() {
   }
 }
 
+
+// ---SLIDABLE ELEMENTS---
+
 // Slide elements in on scroll
 
 function slideElementOnScroll(slidableElement) {
   const scrolled = window.scrollY;
   const slidableElementMiddle = slidableElement.offsetTop;
   const scrolledBottom = (scrolled + window.innerHeight) - slidableElement.offsetHeight / 2;
-  
-  if(scrolledBottom >= slidableElementMiddle) {
+
+  if (scrolledBottom >= slidableElementMiddle) {
     slidableElement.classList.add("slide");
-  } 
-  else {
+  } else {
     slidableElement.classList.remove("slide");
   }
 }
 
-window.onscroll = function() {
+const slidableElements = document.querySelectorAll(".slidable");
+
+window.onscroll = function () {
   updateNavOnScroll();
 
-  const slidableElements = document.querySelectorAll(".slidable");
-
-  slidableElements.forEach(function(slidableElement) {
+  slidableElements.forEach(function (slidableElement) {
     slideElementOnScroll(slidableElement);
   });
 };
-
-
