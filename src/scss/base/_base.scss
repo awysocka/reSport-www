@@ -38,7 +38,7 @@ a {
 .link--contact {
     color: $color-grey-light;
     transition: all .3s ease;
-
+    border-bottom: .5px solid $color-grey-light;
 
     &:hover {
         color: $color-white;
