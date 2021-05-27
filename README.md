@@ -1,6 +1,7 @@
 # radoslaw-rojek-resport-www
 Website for ReSport Radosław Rojek rehabilitation center.
 
+![website-mockup](https://github.com/awysocka/radoslaw-rojek-resport-www/blob/master/readme-img/resport-mockup.jpg)
 ## technologies
 * html 5
 * css 3
