@@ -5,10 +5,8 @@ Website for ReSport Radosław Rojek rehabilitation center.
 ## technologies
 * html 5
 * css 3
-* node-sass 4.12.0
-* vanilla js ES6
+* js
 * [fslightbox 2.0.1](https://fslightbox.com/)
-* [babel 7.6.0](https://babeljs.io/) 
 
 ## setup
 To clone and run this website, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) and [Live Server](https://www.npmjs.com/package/live-server) installed on your computer. From your command line:
